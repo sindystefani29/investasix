@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "app.scss",
+        "1-base/_reset.scss"
+    ],
+    "names": [],
+    "file": "app.css"
+}
