@@ -8,7 +8,7 @@
                   <div class="plr-15 swiper-slide-content d-flex">
                     <h3 class="mb-2">{{banner.header}}</h3>
                     <p  class="mb-5">{{banner.content}}</p>
-                    <div class="mb-60 mt-auto d-flex">
+                    <div class="swiper-slide-button mt-auto d-flex">
                         <v-btn color="white">
                           <nuxt-link to="/investasi">Investasi Sekarang</nuxt-link>
                         </v-btn>

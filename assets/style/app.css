@@ -1,5 +1,5 @@
 .v-content {
-  padding-bottom: 56px;
+  padding-bottom: 56px !important;
   padding-top: 0 !important;
 }
 
@@ -18,10 +18,16 @@ a {
           align-items: center;
 }
 
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .main {
   max-width: 48rem;
   margin: auto !important;
   font-family: 'Nunito Sans';
+  height: 100%;
 }
 
 .plr-15 {
@@ -29,12 +35,20 @@ a {
   padding-right: 15px !important;
 }
 
-.mb-60 {
-  margin-bottom: 60px;
-}
-
 .bg--white {
   background-color: #fff !important;
+}
+
+.line--vertical {
+  border: 0.5px solid #EAEAEA;
+  height: auto;
+  max-width: 1px;
+}
+
+.line--horizontal {
+  border: 1px solid #EAEAEA;
+  width: 100%;
+  max-height: 1px;
 }
 
 @media only screen and (max-width: 560px) {
@@ -46,7 +60,6 @@ a {
 @media only screen and (min-width: 561px) {
   .main {
     width: 480px;
-    overflow-x: hidden;
   }
 }
 
@@ -82,8 +95,7 @@ a {
 
 .main-swiper .swiper-slide img {
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 100%;
 }
 
 .main-swiper .swiper-slide-content {
@@ -130,9 +142,132 @@ a {
   color: #A71E22;
 }
 
+.main-swiper .swiper-slide-button {
+  margin-bottom: 60px;
+}
+
 .main-swiper .v-btn {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+.progress-investasi h4 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.progress-investasi .thumbnail-container .v-progress-linear__bar__determinate {
+  background-color: #A71E22 !important;
+  border-color: #A71E22 !important;
+}
+
+.progress-investasi .thumbnail-container .v-progress-linear {
+  margin: 6px 0 !important;
+}
+
+.progress-investasi .thumbnail-image {
+  height: 120px;
+  position: relative;
+}
+
+.progress-investasi .thumbnail-image img {
+  width: 100%;
+  height: inherit;
+  border-radius: 2px;
+}
+
+.progress-investasi .thumbnail-image--content {
+  position: absolute;
+  padding: 10px;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(35.42%, rgba(83, 9, 11, 0)), to(#231F20));
+  background: linear-gradient(180deg, rgba(83, 9, 11, 0) 35.42%, #231F20 100%);
+  top: 0;
+}
+
+.progress-investasi .thumbnail-image--content a {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  color: #fff;
+}
+
+.progress-investasi .thumbnail-image--content a span {
+  background: #FFFFFF;
+  opacity: 0.9;
+  border-radius: 2px;
+  color: #000;
+  padding: 2px 4px;
+  font-size: 8px;
+  line-height: 11px;
+}
+
+.progress-investasi .thumbnail-detail {
+  margin-top: 12px;
+  margin-bottom: 15px;
+}
+
+.progress-investasi .thumbnail-detail--title {
+  font-size: 11px;
+  line-height: 15px;
+  color: #999999;
+}
+
+.progress-investasi .thumbnail-detail p {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 0;
+}
+
+.progress-investasi .thumbnail-progress {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.progress-investasi .thumbnail-progress--title {
+  color: #188CA6;
+}
+
+.progress-investasi .thumbnail-progress p {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.progress-investasi .thumbnail-done {
+  background: #188CA6;
+  border-radius: 2px;
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.progress-investasi .thumbnail-expired, .progress-investasi .thumbnail-expired > .v-icon {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 12px;
+  color: #B9B9B9;
 }
 /*# sourceMappingURL=app.css.map */
