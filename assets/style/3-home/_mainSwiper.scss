@@ -1,0 +1,51 @@
+.main-swiper{
+    .swiper-slide{
+        position: relative;
+        height: 60vh;
+        max-height: 500px;
+        img{
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .swiper-slide-content{
+        background: linear-gradient(358.67deg, rgba(167, 30, 34, 0) 30%, rgba(167, 30, 34, 0.6) 80%);
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        color: #fff;
+        height: calc(100% - 56px);
+        padding-top: 56px;
+        h3{
+            font-style: normal;
+            font-weight: 800;
+            font-size: 30px;
+            line-height: 41px;
+        }
+        p{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19px;
+            letter-spacing: 0.5px;
+        }
+        button{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 10px;
+            line-height: 19px;
+            a{
+                padding: 10px 0;
+                color: #fff;
+            }
+            &:first-child{
+                a{
+                    color: #A71E22;
+                }
+            }
+        }
+    }
+    .v-btn{
+        flex: 1
+    }
+}

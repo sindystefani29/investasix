@@ -1,19 +1,6 @@
-.d-flex--row {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.d-flex--column {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .v-content {
   padding-bottom: 56px;
+  padding-top: 0 !important;
 }
 
 .nuxt-link-active {
@@ -24,10 +11,26 @@
   color: #A71E22 !important;
 }
 
+a {
+  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .main {
   max-width: 48rem;
   margin: auto !important;
   font-family: 'Nunito Sans';
+}
+
+.plr-15 {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
 }
 
 .bg--white {
@@ -54,10 +57,10 @@
 
 .bottom-menu a {
   color: #000;
-  text-decoration: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .bottom-menu a .v-btn--icon {
@@ -69,5 +72,67 @@
   font-style: normal;
   font-weight: bold;
   line-height: 14px;
+}
+
+.main-swiper .swiper-slide {
+  position: relative;
+  height: 60vh;
+  max-height: 500px;
+}
+
+.main-swiper .swiper-slide img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main-swiper .swiper-slide-content {
+  background: linear-gradient(358.67deg, rgba(167, 30, 34, 0) 30%, rgba(167, 30, 34, 0.6) 80%);
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 0;
+  color: #fff;
+  height: calc(100% - 56px);
+  padding-top: 56px;
+}
+
+.main-swiper .swiper-slide-content h3 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 41px;
+}
+
+.main-swiper .swiper-slide-content p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.5px;
+}
+
+.main-swiper .swiper-slide-content button {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 19px;
+}
+
+.main-swiper .swiper-slide-content button a {
+  padding: 10px 0;
+  color: #fff;
+}
+
+.main-swiper .swiper-slide-content button:first-child a {
+  color: #A71E22;
+}
+
+.main-swiper .v-btn {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 /*# sourceMappingURL=app.css.map */

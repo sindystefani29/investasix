@@ -34,14 +34,16 @@ export default {
   */
   css: [
     '~/assets/style/app.styl',
-    '~/assets/style/app.css'
+    '~/assets/style/app.css',
+    '~/assets/style/swiper.css'
   ],
 
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/vuetify'
+    '@/plugins/vuetify',
+    { src: '~/plugins/swiper.js', ssr: false }
   ],
 
   /*

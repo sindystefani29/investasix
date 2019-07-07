@@ -6,8 +6,8 @@
       app
       class="bg--white bottom-menu"
     >
-        <div class="main d-flex d-flex--row">
-            <nuxt-link v-for="(menu, index) in bottomMenu" :key="index" :to="menu.to" class="d-flex d-flex--column">
+        <div class="main d-flex">
+            <nuxt-link v-for="(menu, index) in bottomMenu" :key="index" :to="menu.to" class="d-flex">
                 <v-btn
                     icon
                 >
@@ -15,7 +15,7 @@
                 </v-btn>
                 <span>{{menu.title}}</span>
             </nuxt-link>
-            <a class="d-flex d-flex--column">
+            <a class="d-flex">
                 <v-btn
                     icon
                     @click="rightDrawer = !rightDrawer" 

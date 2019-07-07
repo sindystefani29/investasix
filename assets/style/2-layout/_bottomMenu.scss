@@ -3,8 +3,7 @@
     top: auto !important;
     a{
         color: #000;
-        text-decoration: none;
-        align-items: center;
+        flex-direction: column;
         .v-btn--icon{
             margin: 0 !important;
         }

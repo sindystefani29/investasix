@@ -1,5 +1,6 @@
 .v-content{
     padding-bottom: 56px;
+    padding-top: 0 !important;
 }
 
 .nuxt-link-active{
@@ -9,19 +10,24 @@
     }
 }
 
+a{
+    text-decoration: none;
+    align-items: center;
+}
+
 .main{
     max-width: 48rem;
     margin: auto !important;
     font-family: 'Nunito Sans';
 }
 
-.d-flex{
-    &--row{
-        @extend %dflex--row;
-    }
-    &--column{
-        @extend %dflex--column;
-    }
+.plr-15{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.mb-60{
+    margin-bottom: 60px;
 }
 
 .bg{
