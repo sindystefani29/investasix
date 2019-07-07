@@ -1,0 +1,18 @@
+.bottom-menu{
+    bottom: 0;
+    top: auto !important;
+    a{
+        color: #000;
+        text-decoration: none;
+        align-items: center;
+        .v-btn--icon{
+            margin: 0 !important;
+        }
+    }
+    span{
+        font-size: 10px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 14px;
+    }
+}

@@ -1,2 +1,7 @@
 @import
+	'1-base/_variables',
+	'1-base/_inheritance',
 	'1-base/_reset';
+
+@import
+	'2-layout/_bottomMenu';

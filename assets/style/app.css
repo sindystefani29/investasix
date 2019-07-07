@@ -1,1 +1,73 @@
-/* No CSS *//*# sourceMappingURL=app.css.map */
+.d-flex--row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.d-flex--column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.v-content {
+  padding-bottom: 56px;
+}
+
+.nuxt-link-active {
+  color: #A71E22 !important;
+}
+
+.nuxt-link-active .v-icon {
+  color: #A71E22 !important;
+}
+
+.main {
+  max-width: 48rem;
+  margin: auto !important;
+  font-family: 'Nunito Sans';
+}
+
+.bg--white {
+  background-color: #fff !important;
+}
+
+@media only screen and (max-width: 560px) {
+  .main {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 561px) {
+  .main {
+    width: 480px;
+    overflow-x: hidden;
+  }
+}
+
+.bottom-menu {
+  bottom: 0;
+  top: auto !important;
+}
+
+.bottom-menu a {
+  color: #000;
+  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bottom-menu a .v-btn--icon {
+  margin: 0 !important;
+}
+
+.bottom-menu span {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 14px;
+}
+/*# sourceMappingURL=app.css.map */

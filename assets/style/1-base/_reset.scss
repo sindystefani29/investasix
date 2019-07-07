@@ -1,0 +1,44 @@
+.v-content{
+    padding-bottom: 56px;
+}
+
+.nuxt-link-active{
+    color: #A71E22 !important;
+    .v-icon{
+        color: #A71E22 !important;
+    }
+}
+
+.main{
+    max-width: 48rem;
+    margin: auto !important;
+    font-family: 'Nunito Sans';
+}
+
+.d-flex{
+    &--row{
+        @extend %dflex--row;
+    }
+    &--column{
+        @extend %dflex--column;
+    }
+}
+
+.bg{
+    &--white{
+        background-color: #fff !important;
+    }
+}
+
+@media only screen and (max-width: 560px){
+    .main{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 561px){
+    .main{
+        width: 480px;
+        overflow-x: hidden;
+    }
+}
