@@ -1,5 +1,6 @@
 <template>
   <v-app>
+      <topMenu />
       <v-content>
         <nuxt />
       </v-content>
@@ -9,9 +10,11 @@
 
 <script>
 import bottomMenu from '~/components/layout/bottomMenu.vue'
+import topMenu from '~/components/layout/topMenu.vue'
 export default {
   components: {
-    bottomMenu
+    bottomMenu,
+    topMenu
   }
 }
 </script>

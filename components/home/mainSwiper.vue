@@ -6,7 +6,7 @@
                 <div class="swiper-slide zomato--banner__swiper" v-for="(banner, index) in bannerSlide" :key="index">
                   <img src="~/static/city.jpg"/>
                   <div class="plr-15 swiper-slide-content d-flex">
-                    <h3 class="mb-2">{{banner.header}}</h3>
+                    <h3 class="mb-2 mt-4">{{banner.header}}</h3>
                     <p  class="mb-5">{{banner.content}}</p>
                     <div class="swiper-slide-button mt-auto d-flex">
                         <v-btn color="white">
