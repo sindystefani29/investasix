@@ -3,6 +3,12 @@
     padding-top: 0 !important;
 }
 
+.v-btn__content{
+    a{
+        text-transform: capitalize;
+    }
+}
+
 .nuxt-link-active{
     color: #A71E22 !important;
     .v-icon{
@@ -34,6 +40,9 @@ img{
 .bg{
     &--white{
         background-color: #fff !important;
+    }
+    &--grey{
+        background-color: #EAEAEA;
     }
 }
 

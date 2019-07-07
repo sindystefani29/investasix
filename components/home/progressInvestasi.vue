@@ -138,6 +138,9 @@
             <div class="thumbnail-done">Telah terdanai 100% oleh 200 Lender di 26 Jan 2019</div>
             <div class="line--horizontal mt-4 mb-4"></div>
         </div>
+        <v-btn color="#A71E22" class="m-auto thumbnail-button">
+            <nuxt-link to="/investasi">Lihat Lebih Banyak</nuxt-link>
+        </v-btn>
     </div>
 </template>
 

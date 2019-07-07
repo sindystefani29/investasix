@@ -1,0 +1,86 @@
+.wording-investasix{
+    h4{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+    }
+    .wording{
+        &-button{
+            display: flex;
+            margin: auto;
+            a{
+                color: #fff !important;
+            }
+        }
+        &-column{
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 35px;
+            padding-top: 35px;
+            text-align: center;
+            &--image{
+                background-color: #fff;
+                border-radius: 50%;
+                width: 59px;
+                height: 59px;
+                margin-bottom: 15px; 
+                position: relative;
+                display: flex;
+                margin: auto;
+                img{
+                    margin: auto;
+                    display: block;
+                }
+            }
+            &--title{
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 25px;
+            }
+            &--caption{
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 19px;
+            }
+            p{
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+        &-row{
+            flex-wrap: wrap;
+            &--title{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 19px;
+            }
+            p{
+                text-align: center;
+                margin-bottom: 0;
+            }
+            &--content{
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 30px;
+                img{
+                    background-color: #EAEAEA;
+                    border-radius: 50%;
+                    width: 100px;
+                    height: 100px;
+                    margin-bottom: 12px
+                }
+            }
+        }
+    }
+}

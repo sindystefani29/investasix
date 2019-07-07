@@ -1,8 +1,8 @@
 <template>
-  <div class="main bg--white
-  ">
+  <div class="main bg--white">
     <mainSwiper />
     <progressInvestasi />
+    <wordingInvestasix />
   </div>
 </template>
 
@@ -10,11 +10,13 @@
 import axios from 'axios'
 import mainSwiper from '~/components/home/mainSwiper.vue'
 import progressInvestasi from '~/components/home/progressInvestasi.vue'
+import wordingInvestasix from '~/components/home/wordingInvestasix.vue'
 export default {
   layout: 'mainNavbar',
   components: {
     mainSwiper,
-    progressInvestasi
+    progressInvestasi,
+    wordingInvestasix
   }
 }
 </script>
