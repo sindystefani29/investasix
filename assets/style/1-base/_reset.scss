@@ -9,6 +9,11 @@
     }
 }
 
+.d-flex {
+    display: flex;
+    flex: 1 1 auto !important;
+}
+
 .nuxt-link-active{
     color: #A71E22 !important;
     .v-icon{
