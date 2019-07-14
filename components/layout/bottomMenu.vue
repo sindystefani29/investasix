@@ -11,7 +11,7 @@
                 <v-btn
                     icon
                 >
-                    <v-icon>{{menu.icon}}</v-icon>
+                    <img class="icon-img" :src="require(`@/static/icon/${menu.icon}.png`)"/>
                 </v-btn>
                 <span>{{menu.title}}</span>
             </nuxt-link>
@@ -81,22 +81,22 @@ export default {
           {
               to: '/',
               title: 'BERANDA',
-              icon: 'home'
+              icon: 'beranda'
           },
           {
               to: '/portfolio',
               title: 'PORTFOLIO',
-              icon: 'person_pin'
+              icon: 'portfolio'
           },
           {
               to: '/dana',
               title: 'DANA',
-              icon: 'monetization_on'
+              icon: 'dana'
           },
           {
               to: '/inbox',
               title: 'INBOX',
-              icon: 'mail'
+              icon: 'inbox'
           }
       ]
     }
