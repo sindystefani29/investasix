@@ -3,18 +3,43 @@
 }
 
 .v-content {
-  padding-bottom: 56px !important;
+  padding-bottom: 50px !important;
   padding-top: 0 !important;
+}
+
+.v-btn {
+  padding: 0;
+  height: 100%;
 }
 
 .v-btn__content a {
   text-transform: capitalize;
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.d-flex > * {
+  -webkit-box-flex: inherit !important;
+      -ms-flex: inherit !important;
+          flex: inherit !important;
+}
+
+.d-flex > .flex-1 {
+  -webkit-box-flex: 1 !important;
+      -ms-flex: 1 1 auto !important;
+          flex: 1 1 auto !important;
 }
 
 .nuxt-link-active {
@@ -37,6 +62,11 @@ img {
      object-fit: cover;
 }
 
+.icon-img {
+  width: 20px;
+  height: 20px;
+}
+
 .main {
   max-width: 48rem;
   margin: auto !important;
@@ -46,7 +76,6 @@ img {
 
 .custom-button {
   width: 200px;
-  height: 40px;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -56,6 +85,26 @@ img {
 .plr-15 {
   padding-left: 15px !important;
   padding-right: 15px !important;
+}
+
+.h-120 {
+  height: 120px;
+}
+
+.h-135 {
+  height: 135px;
+}
+
+.text-grey {
+  color: #999999;
+}
+
+.text-black {
+  color: #231F20;
+}
+
+.text-white {
+  color: #fff;
 }
 
 .bg--white {
@@ -114,6 +163,19 @@ img {
   line-height: 14px;
 }
 
+.bottom-menu--button {
+  margin: 0;
+}
+
+.bottom-menu--button a {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+  height: 50px;
+}
+
 .top-menu {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
@@ -122,6 +184,7 @@ img {
 
 .top-menu .v-toolbar__content {
   padding: 0;
+  height: 50px !important;
 }
 
 .top-menu--caption {
@@ -131,6 +194,10 @@ img {
   font-size: 14px;
   line-height: 19px;
   text-align: right;
+}
+
+.top-menu .v-icon {
+  color: #fff;
 }
 
 .top-menu .main {
@@ -155,8 +222,8 @@ img {
   color: #000 !important;
 }
 
-.top-menu--white .v-toolbar__content {
-  height: 40px !important;
+.top-menu--white .v-icon {
+  color: #A71E22;
 }
 
 .main-swiper .swiper-slide {
@@ -201,7 +268,6 @@ img {
 }
 
 .main-swiper .swiper-slide-content button a {
-  padding: 8px 0;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -243,7 +309,6 @@ img {
 }
 
 .progress-investasi .thumbnail-image {
-  height: 120px;
   position: relative;
 }
 
@@ -257,6 +322,7 @@ img {
   position: absolute;
   padding: 10px;
   height: 100%;
+  width: 100%;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(35.42%, rgba(83, 9, 11, 0)), to(#231F20));
   background: linear-gradient(180deg, rgba(83, 9, 11, 0) 35.42%, #231F20 100%);
   top: 0;
@@ -278,10 +344,10 @@ img {
   padding: 2px 4px;
   font-size: 8px;
   line-height: 11px;
+  white-space: nowrap;
 }
 
 .progress-investasi .thumbnail-detail {
-  margin-top: 12px;
   margin-bottom: 15px;
 }
 
@@ -340,6 +406,9 @@ img {
   font-size: 11px;
   line-height: 12px;
   color: #B9B9B9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .progress-investasi .thumbnail-button {
@@ -469,5 +538,65 @@ img {
   width: 100px;
   height: 100px;
   margin-bottom: 12px;
+}
+
+.kampanye-detil--frekuensi {
+  border: 1px solid #EAEAEA;
+  border-radius: 2px;
+  padding: 15px;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.kampanye-detil--frekuensi .v-icon {
+  font-size: 6px;
+  color: #B9B9B9;
+}
+
+.kampanye-detil--frekuensi > div {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.kampanye-detil--link {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #231F20;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #EAEAEA;
+  padding: 13px;
+}
+
+.kampanye-detil--link .v-icon {
+  color: #A71E22;
+}
+
+.kampanye-detil h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.kampanye-detil h4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.kampanye-detil p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
 }
 /*# sourceMappingURL=app.css.map */

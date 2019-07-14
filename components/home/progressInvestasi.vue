@@ -2,29 +2,29 @@
     <div class="progress-investasi">
         <h4>Mulai investasi Sekarang</h4>
         <div class="thumbnail-container plr-15" v-for="(item, index) in investasiList" :key="index">
-            <div class="thumbnail-image">
+            <div class="thumbnail-image h-120">
                 <img src="~/static/welding.jpg"/>
                 <div class="thumbnail-image--content d-flex">
-                    <nuxt-link to="/welding" class="mb-0 mt-auto">{{item.nama}} {{item.identitas.detil_usaha}} {{item.identitas.kota}} <span>{{item.id}}</span></nuxt-link>
+                    <nuxt-link :to="{path: `/kampanye/${item.id}`}" class="mb-0 mt-auto">{{item.nama}} {{item.identitas.detil_usaha}} {{item.identitas.kota}} <span>{{item.id}}</span></nuxt-link>
                 </div>
             </div>
-            <div class="thumbnail-detail d-flex">
-                <div>
+            <div class="thumbnail-detail d-flex mt-3">
+                <div class="flex-1">
                     <div class="thumbnail-detail--title">Jumlah Pinjaman</div>
                     <p>Rp {{item.jumlah_pinjaman}}</p>
                 </div>
                 <div class="line--vertical"></div>
-                <div class="plr-15">
+                <div class="plr-15 flex-1">
                     <div class="thumbnail-detail--title">Bunga</div>
                     <p>{{item.bunga}}</p>
                 </div>
                 <div class="line--vertical"></div>
-                <div class="plr-15">
+                <div class="plr-15 flex-1">
                     <div class="thumbnail-detail--title">Grade</div>
                     <p>{{item.grade}}</p>
                 </div>
                 <div class="line--vertical"></div>
-                <div class="plr-15">
+                <div class="plr-15 flex-1">
                     <div class="thumbnail-detail--title">Tenor</div>
                     <p>{{item.tenor}}</p>
                 </div>

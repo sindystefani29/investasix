@@ -1,6 +1,6 @@
 export const investasiList = [
     {
-        "id" : "NO845/VE/1923",
+        "id" : "NO845-VE-1923",
         "nama" : "PT. ABC",
         "identitas" : {
             "alamat" : "Greenland Industrial Park",
@@ -106,7 +106,7 @@ export const investasiList = [
         ]
     },
     {
-        "id" : "NO845/VE/1923",
+        "id" : "NO845-VE-1924",
         "nama" : "PT. ABC Sindo Multi",
         "identitas" : {
             "alamat" : "Gedung 101",
@@ -212,7 +212,7 @@ export const investasiList = [
         ]
     },
     {
-        "id" : "NO845/VE/1923",
+        "id" : "NO845-VE-1925",
         "nama" : "PT. Babibubebo",
         "identitas" : {
             "alamat" : "Gedung 101",
@@ -318,7 +318,7 @@ export const investasiList = [
         ]
     },
     {
-        "id" : "NO845/VE/1923",
+        "id" : "NO845-VE-1926",
         "nama" : "PT. Indra Maju Jaya",
         "identitas" : {
             "alamat" : "Gedung 101",

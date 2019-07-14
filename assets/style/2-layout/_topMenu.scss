@@ -3,6 +3,7 @@
     background-color: transparent !important;
     .v-toolbar__content{
         padding: 0;
+        height: 50px !important;
     }
     &--caption{
         color: #fff;
@@ -11,6 +12,9 @@
         font-size: 14px;
         line-height: 19px;
         text-align: right;
+    }
+    .v-icon{
+        color: #fff;
     }
     .main{
         justify-content: space-between;
@@ -24,8 +28,8 @@
         .top-menu--caption{
             color: #000 !important;
         }
-        .v-toolbar__content{
-            height: 40px !important;
+        .v-icon{
+            color: $red;
         }
     }
 }

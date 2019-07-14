@@ -19,7 +19,6 @@
             }
         }
         &-image{
-            height: 120px;
             position: relative;
             img{
                 width: 100%;
@@ -30,6 +29,7 @@
                 position: absolute;
                 padding: 10px;
                 height: 100%;
+                width: 100%;
                 background: linear-gradient(180deg, rgba(83, 9, 11, 0) 35.42%, #231F20 100%);
                 top: 0;
                 a{
@@ -46,12 +46,12 @@
                         padding: 2px 4px;
                         font-size: 8px;
                         line-height: 11px;
+                        white-space: nowrap;
                     }
                 }
             }
         }
         &-detail{
-            margin-top: 12px;
             margin-bottom: 15px;
             &--title{
                 font-size: 11px;
@@ -99,6 +99,7 @@
             font-size: 11px;
             line-height: 12px;
             color: #B9B9B9;
+            display: flex;
         }
         &-button{
             display: flex;

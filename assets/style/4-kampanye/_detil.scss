@@ -1,0 +1,46 @@
+.kampanye-detil{
+    &--frekuensi{
+        border: 1px solid $light_grey;
+        border-radius: 2px;
+        padding: 15px;
+        font-style: normal;
+        font-size: 12px;
+        line-height: 12px;
+        .v-icon{
+            font-size: 6px;
+            color: #B9B9B9;
+        }
+        & > div{
+            align-items: center;
+            justify-content: flex-start;
+        }
+    }
+    &--link{
+        justify-content: space-between;
+        color: $black;
+        align-items: center;
+        border: 1px solid $light_grey;
+        padding: 13px;
+        .v-icon{
+            color: $red;
+        }
+    }
+    h3{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 19px;
+    }
+    h4{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+    }
+    p{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+    }
+}

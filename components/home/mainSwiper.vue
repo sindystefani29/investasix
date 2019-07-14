@@ -9,10 +9,10 @@
               <h3 class="mb-2 mt-4">{{banner.header}}</h3>
               <p  class="mb-5">{{banner.content}}</p>
               <div class="swiper-slide-button mt-auto d-flex">
-                <v-btn color="white">
+                <v-btn color="white" class="flex-1">
                   <nuxt-link to="/investasi">Investasi Sekarang</nuxt-link>
                 </v-btn>
-                <v-btn outline color="white">
+                <v-btn outline color="white" class="flex-1">
                   <nuxt-link to="/pelajari">Pelajari Lebih Lanjut</nuxt-link>
                 </v-btn>
               </div>

@@ -3,18 +3,33 @@
 }
 
 .v-content{
-    padding-bottom: 56px !important;
+    padding-bottom: 50px !important;
     padding-top: 0 !important;
+}
+
+.v-btn{
+    padding: 0;
+    height: 100%;
 }
 
 .v-btn__content{
     a{
         text-transform: capitalize;
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
     }
 }
 
 .d-flex {
     display: flex;
+    & > *{
+        flex: inherit !important;
+    }
+    & > .flex-1{
+        flex: 1 1 auto !important;
+    }
 }
 
 .nuxt-link-active{
@@ -33,6 +48,11 @@ img{
     object-fit: cover
 }
 
+.icon-img{
+    width: 20px;
+    height: 20px;
+}
+
 .main{
     max-width: 48rem;
     margin: auto !important;
@@ -42,7 +62,6 @@ img{
 
 .custom-button{
     width: 200px;
-    height: 40px;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -52,6 +71,25 @@ img{
 .plr-15{
     padding-left: 15px !important;
     padding-right: 15px !important;
+}
+
+.h-120{
+    height: 120px;
+}
+.h-135{
+    height: 135px;
+}
+
+.text{
+    &-grey{
+        color: $grey;
+    }
+    &-black{
+        color: $black;
+    }
+    &-white{
+        color: #fff;
+    }
 }
 
 .bg{
