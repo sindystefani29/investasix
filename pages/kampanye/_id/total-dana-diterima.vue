@@ -1,5 +1,5 @@
 <template>
-  <div class="main bg--white pt-50">
+  <div class="main bg--white pt-65">
     <topArrow 
       :backLink = "backLink"
       :transparent = "false"

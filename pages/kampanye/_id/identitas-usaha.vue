@@ -3,9 +3,9 @@
     <topArrow 
       :backLink = "backLink"
       :transparent = "false"
-      textLink = "Total Investasi"
+      textLink = "Identitas Usaha"
     />
-    <totalInvestasi 
+    <identitasUsaha 
       :param = "paramId"
     />
   </div>
@@ -13,11 +13,11 @@
 
 <script>
 import axios from 'axios'
-import totalInvestasi from '~/components/kampanye/totalInvestasi.vue'
+import identitasUsaha from '~/components/kampanye/identitasUsaha.vue'
 import topArrow from '~/components/layout/topArrow.vue'
 export default {
   components: {
-    totalInvestasi,
+    identitasUsaha,
     topArrow
   },
   async asyncData({ params }) {

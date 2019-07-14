@@ -1,0 +1,24 @@
+.identitas-usaha{
+    &--detail{
+        span{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 11px;
+            line-height: 15px;
+            color: $grey;
+        }
+        h4{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 19px;
+        }
+        p{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+            color: $grey;
+        }
+    }
+}

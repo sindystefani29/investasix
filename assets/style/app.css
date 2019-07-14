@@ -87,8 +87,8 @@ img {
   padding-right: 15px !important;
 }
 
-.pt-50 {
-  padding-top: 50px;
+.pt-65 {
+  padding-top: 65px;
 }
 
 .h-120 {
@@ -704,5 +704,28 @@ img {
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
+}
+
+.identitas-usaha--detail span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 15px;
+  color: #999999;
+}
+
+.identitas-usaha--detail h4 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.identitas-usaha--detail p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #999999;
 }
 /*# sourceMappingURL=app.css.map */
