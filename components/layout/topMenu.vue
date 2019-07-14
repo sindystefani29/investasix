@@ -4,7 +4,7 @@
     <v-toolbar
       fixed
       app
-      class="top-menu" id="navbar"
+      class="top-menu bg--trans" id="navbar"
     >
         <div class="main d-flex">
             <div class="top-menu--logo">

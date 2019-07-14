@@ -73,6 +73,10 @@ img{
     padding-right: 15px !important;
 }
 
+.pt-50{
+    padding-top: 50px;
+}
+
 .h-120{
     height: 120px;
 }
@@ -98,6 +102,9 @@ img{
     }
     &--grey{
         background-color: $light_grey;
+    }
+    &--trans{
+        background-color: transparent !important;
     }
 }
 

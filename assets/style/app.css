@@ -87,6 +87,10 @@ img {
   padding-right: 15px !important;
 }
 
+.pt-50 {
+  padding-top: 50px;
+}
+
 .h-120 {
   height: 120px;
 }
@@ -113,6 +117,10 @@ img {
 
 .bg--grey {
   background-color: #EAEAEA;
+}
+
+.bg--trans {
+  background-color: transparent !important;
 }
 
 .line--vertical {
@@ -163,6 +171,10 @@ img {
   line-height: 14px;
 }
 
+.bottom-menu .v-toolbar__content {
+  padding: 0px !important;
+}
+
 .bottom-menu--button {
   margin: 0;
 }
@@ -179,7 +191,6 @@ img {
 .top-menu {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
-  background-color: transparent !important;
 }
 
 .top-menu .v-toolbar__content {
@@ -208,6 +219,14 @@ img {
       -ms-flex-align: center;
           align-items: center;
   padding: 13px;
+}
+
+.top-menu span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #231F20;
 }
 
 .top-menu--white {
@@ -579,6 +598,40 @@ img {
   color: #A71E22;
 }
 
+.kampanye-detil--investasi {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.kampanye-detil--investasi > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 20px;
+}
+
+.kampanye-detil--investasi span {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #188CA6;
+}
+
+.kampanye-detil--investasi a {
+  color: #A71E22;
+  text-decoration: underline;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+}
+
 .kampanye-detil h3 {
   font-style: normal;
   font-weight: bold;
@@ -593,10 +646,63 @@ img {
   line-height: 19px;
 }
 
+.kampanye-detil h5 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+}
+
 .kampanye-detil p {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
+}
+
+.total-investasi--detail {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0px;
+}
+
+.total-investasi h4 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.total-dana-terima--detail {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.total-dana-terima h4 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.total-dana-terima h5 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #188CA6;
+}
+
+.total-dana-terima span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
 }
 /*# sourceMappingURL=app.css.map */

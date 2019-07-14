@@ -42,10 +42,22 @@
       <div class="plr-15">
         <div class="kampanye-detil--frekuensi mb-4">
           <div class="mb-2 d-flex">
-            <v-icon class="mr-2">brightness_1</v-icon> <span class="text-grey mr-2">Frekuensi Angsuran Pokok :</span> <span class="text-black"><strong>{{item.angsuran_pokok}}</strong></span>
+            <v-icon class="mr-2">brightness_1</v-icon> <span class="text-grey mr-2">Frekuensi Angsuran Pokok :</span> <strong>{{item.angsuran_pokok}}</strong>
           </div>
           <div class="d-flex">
-            <v-icon class="mr-2">brightness_1</v-icon> <span class="text-grey mr-2">Frekuensi Angsuran Bunga :</span> <span class="text-black"><strong>{{item.angsuran_bunga}}</strong></span>
+            <v-icon class="mr-2">brightness_1</v-icon> <span class="text-grey mr-2">Frekuensi Angsuran Bunga :</span> <strong>{{item.angsuran_bunga}}</strong>
+          </div>
+        </div>
+        <div class="kampanye-detil--investasi mb-4 d-flex">
+          <div>
+            <h5>Total Investasi</h5>
+            <span class="mb-1">Rp {{item.total_investasi}}</span>
+            <nuxt-link :to="{path: `/kampanye/${item.id}/total-investasi`}">Lihat Detail</nuxt-link>
+          </div>
+          <div>
+            <h5>Total Dana Diterima</h5>
+            <span class="mb-1">Rp {{item.total_dana_diterima}}</span>
+            <nuxt-link :to="{path: `/kampanye/${item.id}/total-dana-diterima`}">Lihat Detail</nuxt-link>
           </div>
         </div>
         <h3 class="mb-1">Tujuan Penggalangan Dana</h3>

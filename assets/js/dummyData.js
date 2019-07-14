@@ -30,25 +30,25 @@ export const investasiList = [
         },
         "jadwal_angsuran" : [
             {
-                "tanggal" : "2019-07-14",
+                "tanggal" : "14 Juli 2019",
                 "jenis" : "Pengembalian",
                 "deskripsi" : "Bunga",
                 "nominal" : "8.750.000"
             },
             {
-                "tanggal" : "2019-07-14",
+                "tanggal" : "14 Juli 2019",
                 "jenis" : "Pengembalian",
                 "deskripsi" : "Bunga",
                 "nominal" : "8.750.000"
             },
             {
-                "tanggal" : "2019-07-14",
+                "tanggal" : "14 Juli 2019",
                 "jenis" : "Pengembalian",
                 "deskripsi" : "Bunga",
                 "nominal" : "8.750.000"
             },
             {
-                "tanggal" : "2019-07-14",
+                "tanggal" : "14 Juli 2019",
                 "jenis" : "Pengembalian",
                 "deskripsi" : "Bunga + Pokok",
                 "nominal" : "388.500.000"
@@ -74,31 +74,31 @@ export const investasiList = [
         "tanggal_lunas" : null,
         "jumlah_lender" : null,
         "dana_terkumpul" : "200.000.000",
-        "tanggal_berakhir" : "2019-08-14",
+        "tanggal_berakhir" : "14 Juli 2019",
         "angsuran_pokok" : "Akhir Tenor",
         "angsuran_bunga" : "Bulanan",
         "tujuan_dana" : "Pinjaman ini kaan digunakan sebagai modal extra atas pembangunan rumah subsidi yang berada di kawasan jakarta Selatan, Modal extra ini diharapkan dapat membantu peminjam untuk dapat merealisasikan pembangunan yang akan segera dilaksanakan",
         "total_investasi" : "1.000.000",
         "investasi" : [
             {
-                "tanggal" : "2019-07-11",
+                "tanggal" : "14 Juli 2019",
                 "nominal" : "412.000"
             },
             {
-                "tanggal" : "2019-07-08",
+                "tanggal" : "14 Juli 2019",
                 "nominal" : "500.605"
             }
         ],
         "total_dana_diterima" : "800.000",
         "dana_diterima" : [
             {
-                "tanggal" : "2019-07-11",
+                "tanggal" : "14 Juli 2019",
                 "jam" : "16:00",
                 "deskripsi" : "Payout Bunga",
                 "nominal" : "1.000.000"
             },
             {
-                "tanggal" : "2019-07-08",
+                "tanggal" : "14 Juli 2019",
                 "jam" : "16:00",
                 "deskripsi" : "Payout Bunga",
                 "nominal" : "1.000.000"
@@ -136,25 +136,25 @@ export const investasiList = [
         },
         "jadwal_angsuran" : [
             {
-                "tanggal" : "2019-07-14",
+                "tanggal" : "14 Juli 2019",
                 "jenis" : "Pengembalian",
                 "deskripsi" : "Bunga",
                 "nominal" : "8.750.000"
             },
             {
-                "tanggal" : "2019-07-14",
+                "tanggal" : "14 Juli 2019",
                 "jenis" : "Pengembalian",
                 "deskripsi" : "Bunga",
                 "nominal" : "8.750.000"
             },
             {
-                "tanggal" : "2019-07-14",
+                "tanggal" : "14 Juli 2019",
                 "jenis" : "Pengembalian",
                 "deskripsi" : "Bunga",
                 "nominal" : "8.750.000"
             },
             {
-                "tanggal" : "2019-07-14",
+                "tanggal" : "14 Juli 2019",
                 "jenis" : "Pengembalian",
                 "deskripsi" : "Bunga + Pokok",
                 "nominal" : "388.500.000"
@@ -177,34 +177,34 @@ export const investasiList = [
         "grade" : "A+",
         "tenor" : "3 Bulan",
         "progress" : "100",
-        "tanggal_lunas" : "2019-07-20",
+        "tanggal_lunas" : "14 Juli 2019",
         "jumlah_lender" : "200",
         "dana_terkumpul" : "200.000.000",
-        "tanggal_berakhir" : "2019-08-14",
+        "tanggal_berakhir" : "14 Juli 2019",
         "angsuran_pokok" : "Akhir Tenor",
         "angsuran_bunga" : "Bulanan",
         "tujuan_dana" : "Pinjaman ini kaan digunakan sebagai modal extra atas pembangunan rumah subsidi yang berada di kawasan jakarta Selatan, Modal extra ini diharapkan dapat membantu peminjam untuk dapat merealisasikan pembangunan yang akan segera dilaksanakan",
         "total_investasi" : "1.000.000",
         "investasi" : [
             {
-                "tanggal" : "2019-07-11",
+                "tanggal" : "14 Juli 2019",
                 "nominal" : "412.000"
             },
             {
-                "tanggal" : "2019-07-08",
+                "tanggal" : "14 Juli 2019",
                 "nominal" : "500.605"
             }
         ],
         "total_dana_diterima" : "800.000",
         "dana_diterima" : [
             {
-                "tanggal" : "2019-07-11",
+                "tanggal" : "14 Juli 2019",
                 "jam" : "16:00",
                 "deskripsi" : "Payout Bunga",
                 "nominal" : "1.000.000"
             },
             {
-                "tanggal" : "2019-07-08",
+                "tanggal" : "14 Juli 2019",
                 "jam" : "16:00",
                 "deskripsi" : "Payout Bunga",
                 "nominal" : "1.000.000"
@@ -242,25 +242,25 @@ export const investasiList = [
         },
         "jadwal_angsuran" : [
             {
-                "tanggal" : "2019-07-14",
+                "tanggal" : "14 Juli 2019",
                 "jenis" : "Pengembalian",
                 "deskripsi" : "Bunga",
                 "nominal" : "8.750.000"
             },
             {
-                "tanggal" : "2019-07-14",
+                "tanggal" : "14 Juli 2019",
                 "jenis" : "Pengembalian",
                 "deskripsi" : "Bunga",
                 "nominal" : "8.750.000"
             },
             {
-                "tanggal" : "2019-07-14",
+                "tanggal" : "14 Juli 2019",
                 "jenis" : "Pengembalian",
                 "deskripsi" : "Bunga",
                 "nominal" : "8.750.000"
             },
             {
-                "tanggal" : "2019-07-14",
+                "tanggal" : "14 Juli 2019",
                 "jenis" : "Pengembalian",
                 "deskripsi" : "Bunga + Pokok",
                 "nominal" : "388.500.000"
@@ -286,31 +286,31 @@ export const investasiList = [
         "tanggal_lunas" : null,
         "jumlah_lender" : "200",
         "dana_terkumpul" : "20.000.000",
-        "tanggal_berakhir" : "2019-08-14",
+        "tanggal_berakhir" : "14 Juli 2019",
         "angsuran_pokok" : "Akhir Tenor",
         "angsuran_bunga" : "Bulanan",
         "tujuan_dana" : "Pinjaman ini kaan digunakan sebagai modal extra atas pembangunan rumah subsidi yang berada di kawasan jakarta Selatan, Modal extra ini diharapkan dapat membantu peminjam untuk dapat merealisasikan pembangunan yang akan segera dilaksanakan",
         "total_investasi" : "1.000.000",
         "investasi" : [
             {
-                "tanggal" : "2019-07-11",
+                "tanggal" : "14 Juli 2019",
                 "nominal" : "412.000"
             },
             {
-                "tanggal" : "2019-07-08",
+                "tanggal" : "14 Juli 2019",
                 "nominal" : "500.605"
             }
         ],
         "total_dana_diterima" : "800.000",
         "dana_diterima" : [
             {
-                "tanggal" : "2019-07-11",
+                "tanggal" : "14 Juli 2019",
                 "jam" : "16:00",
                 "deskripsi" : "Payout Bunga",
                 "nominal" : "1.000.000"
             },
             {
-                "tanggal" : "2019-07-08",
+                "tanggal" : "14 Juli 2019",
                 "jam" : "16:00",
                 "deskripsi" : "Payout Bunga",
                 "nominal" : "1.000.000"
@@ -348,25 +348,25 @@ export const investasiList = [
         },
         "jadwal_angsuran" : [
             {
-                "tanggal" : "2019-07-14",
+                "tanggal" : "14 Juli 2019",
                 "jenis" : "Pengembalian",
                 "deskripsi" : "Bunga",
                 "nominal" : "8.750.000"
             },
             {
-                "tanggal" : "2019-07-14",
+                "tanggal" : "14 Juli 2019",
                 "jenis" : "Pengembalian",
                 "deskripsi" : "Bunga",
                 "nominal" : "8.750.000"
             },
             {
-                "tanggal" : "2019-07-14",
+                "tanggal" : "14 Juli 2019",
                 "jenis" : "Pengembalian",
                 "deskripsi" : "Bunga",
                 "nominal" : "8.750.000"
             },
             {
-                "tanggal" : "2019-07-14",
+                "tanggal" : "14 Juli 2019",
                 "jenis" : "Pengembalian",
                 "deskripsi" : "Bunga + Pokok",
                 "nominal" : "388.500.000"
@@ -389,7 +389,7 @@ export const investasiList = [
         "grade" : "C+",
         "tenor" : "3 Bulan",
         "progress" : "100",
-        "tanggal_lunas" : "2019-07-13",
+        "tanggal_lunas" : "14 Juli 2019",
         "jumlah_lender" : "200",
         "dana_terkumpul" : "21.500.000",
         "tanggal_berakhir" : "2019-08-14",
@@ -399,24 +399,24 @@ export const investasiList = [
         "total_investasi" : "1.000.000",
         "investasi" : [
             {
-                "tanggal" : "2019-07-11",
+                "tanggal" : "14 Juli 2019",
                 "nominal" : "412.000"
             },
             {
-                "tanggal" : "2019-07-08",
+                "tanggal" : "14 Juli 2019",
                 "nominal" : "500.605"
             }
         ],
         "total_dana_diterima" : "800.000",
         "dana_diterima" : [
             {
-                "tanggal" : "2019-07-11",
+                "tanggal" : "14 Juli 2019",
                 "jam" : "16:00",
                 "deskripsi" : "Payout Bunga",
                 "nominal" : "1.000.000"
             },
             {
-                "tanggal" : "2019-07-08",
+                "tanggal" : "14 Juli 2019",
                 "jam" : "16:00",
                 "deskripsi" : "Payout Bunga",
                 "nominal" : "1.000.000"

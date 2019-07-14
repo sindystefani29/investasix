@@ -4,7 +4,7 @@
     <v-toolbar
       fixed
       app
-      class="top-menu" id="navbar"
+      class="top-menu bg--trans" id="navbar"
       v-if="transparent"
     >
         <div class="main d-flex">
@@ -16,12 +16,13 @@
     <v-toolbar
       fixed
       app
-      class="top-arrow" id="navbar"
+      class="top-menu top-menu--white"
       v-else
     >
         <div class="main d-flex">
-            <nuxt-link :to="{path: backLink}" exact>
-                <v-icon class="text-white">arrow_back</v-icon>
+            <nuxt-link :to="{path: backLink}" exact class="d-flex">
+                <v-icon class="text-white mr-2">arrow_back</v-icon>
+                <span>{{textLink}}</span>
             </nuxt-link>
         </div>
     </v-toolbar>
@@ -32,7 +33,8 @@
 export default {
   props: {
     backLink: String,
-    transparent: Boolean
+    transparent: Boolean,
+    textLink: String
 
   },
   data() {

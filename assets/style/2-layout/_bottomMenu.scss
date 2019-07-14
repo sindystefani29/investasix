@@ -14,6 +14,9 @@
         font-weight: bold;
         line-height: 14px;
     }
+    .v-toolbar__content{
+        padding: 0px !important;
+    }
     &--button{
         margin: 0;
         a{
