@@ -1,3 +1,7 @@
+.theme--light.application {
+  color: #231F20;
+}
+
 .v-content {
   padding-bottom: 56px !important;
   padding-top: 0 !important;
@@ -11,9 +15,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1 !important;
-      -ms-flex: 1 1 auto !important;
-          flex: 1 1 auto !important;
 }
 
 .nuxt-link-active {
@@ -41,6 +42,15 @@ img {
   margin: auto !important;
   font-family: 'Nunito Sans';
   height: 100%;
+}
+
+.custom-button {
+  width: 200px;
+  height: 40px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
 }
 
 .plr-15 {
@@ -134,7 +144,7 @@ img {
 }
 
 .top-menu--white {
-  background-color: white !important;
+  background-color: #fff !important;
   -webkit-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12) !important;
@@ -151,8 +161,7 @@ img {
 
 .main-swiper .swiper-slide {
   position: relative;
-  height: 85vh;
-  max-height: 500px;
+  height: 500px;
 }
 
 .main-swiper .swiper-slide img {
@@ -185,18 +194,18 @@ img {
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
-  letter-spacing: 0.5px;
 }
 
 .main-swiper .swiper-slide-content button {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 10px;
-  line-height: 19px;
+  height: 40px;
 }
 
 .main-swiper .swiper-slide-content button a {
-  padding: 10px 0;
+  padding: 8px 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
   color: #fff;
 }
 
@@ -409,6 +418,7 @@ img {
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
+  margin: 3px 0;
 }
 
 .wording-investasix .wording-column p {

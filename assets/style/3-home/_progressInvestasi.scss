@@ -11,8 +11,8 @@
     .thumbnail{
         &-container{
             .v-progress-linear__bar__determinate{
-                background-color: #A71E22 !important;
-                border-color: #A71E22 !important;
+                background-color: $red !important;
+                border-color: $red !important;
             }
             .v-progress-linear{
                 margin: 6px 0 !important;
@@ -74,7 +74,7 @@
             display: flex;
             justify-content: space-between;
             &--title{
-                color: #188CA6;
+                color: $blue;
             }
             p{
                 margin-bottom: 0;
@@ -82,7 +82,7 @@
             }
         }
         &-done{
-            background: #188CA6;
+            background: $blue;
             border-radius: 2px;
             width: 100%;
             padding: 10px;
