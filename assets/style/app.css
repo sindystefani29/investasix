@@ -173,6 +173,7 @@ img {
 
 .bottom-menu .v-toolbar__content {
   padding: 0px !important;
+  height: 50px !important;
 }
 
 .bottom-menu--button {
@@ -727,5 +728,50 @@ img {
   font-size: 14px;
   line-height: 19px;
   color: #999999;
+}
+
+.highlight-keuangan--container {
+  border: 1px solid #EAEAEA;
+  border-left: 6px solid #188CA6;
+  padding-right: 6px;
+  padding-left: 15px;
+}
+
+.highlight-keuangan h4 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  color: #A71E22;
+}
+
+.highlight-keuangan span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #999999;
+}
+
+.highlight-keuangan--top {
+  padding: 10px 0px;
+}
+
+.highlight-keuangan--top h5 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.highlight-keuangan--bottom {
+  padding: 10px 0px;
+}
+
+.highlight-keuangan--bottom h5 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
 }
 /*# sourceMappingURL=app.css.map */
