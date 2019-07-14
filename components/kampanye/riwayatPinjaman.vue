@@ -1,6 +1,6 @@
 <template>
     <div class="plr-15">
-        <div class="highlight-keuangan plr-15" v-for="(item, index) in detailArr" :key="index">
+        <div class="highlight-keuangan" v-for="(item, index) in detailArr" :key="index">
             <h4>Informasi Riwayat Pinjaman</h4>
             <div class="highlight-keuangan--container mb-4 mt-2">
                 <div class="highlight-keuangan--top">
