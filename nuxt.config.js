@@ -3,6 +3,10 @@ import pkg from './package'
 
 export default {
   mode: 'universal',
+  server : {
+      port:3000,
+      host:'202.67.14.130',
+  },
 
   /*
   ** Headers of the page
