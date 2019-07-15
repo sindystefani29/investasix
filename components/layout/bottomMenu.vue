@@ -7,15 +7,15 @@
       class="bg--white bottom-menu"
     >
         <div class="main d-flex">
-            <nuxt-link v-for="(menu, index) in bottomMenu" :key="index" :to="menu.to" class="d-flex">
+            <nuxt-link v-for="(menu, index) in bottomMenu" :key="index" :to="menu.to" class="d-flex flex-1">
                 <v-btn
                     icon
                 >
-                    <v-icon>{{menu.icon}}</v-icon>
+                    <img class="icon-img" :src="require(`@/static/icon/${menu.icon}.png`)"/>
                 </v-btn>
                 <span>{{menu.title}}</span>
             </nuxt-link>
-            <a class="d-flex">
+            <a class="d-flex flex-1">
                 <v-btn
                     icon
                     @click="rightDrawer = !rightDrawer" 
@@ -81,22 +81,22 @@ export default {
           {
               to: '/',
               title: 'BERANDA',
-              icon: 'home'
+              icon: 'beranda'
           },
           {
               to: '/portfolio',
               title: 'PORTFOLIO',
-              icon: 'person_pin'
+              icon: 'portfolio'
           },
           {
               to: '/dana',
               title: 'DANA',
-              icon: 'monetization_on'
+              icon: 'dana'
           },
           {
               to: '/inbox',
               title: 'INBOX',
-              icon: 'mail'
+              icon: 'inbox'
           }
       ]
     }

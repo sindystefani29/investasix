@@ -1,28 +1,28 @@
 <template>
-<div class="main-swiper">
-<no-ssr>
-          <div v-swiper:mySwiper1="swiperFadeLoop" class="swiper-background">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide zomato--banner__swiper" v-for="(banner, index) in bannerSlide" :key="index">
-                  <img src="~/static/city.jpg"/>
-                  <div class="plr-15 swiper-slide-content d-flex">
-                    <h3 class="mb-2 mt-4">{{banner.header}}</h3>
-                    <p  class="mb-5">{{banner.content}}</p>
-                    <div class="swiper-slide-button mt-auto d-flex">
-                        <v-btn color="white">
-                          <nuxt-link to="/investasi">Investasi Sekarang</nuxt-link>
-                        </v-btn>
-                        <v-btn outline color="white">
-                          <nuxt-link to="/pelajari">Pelajari Lebih Lanjut</nuxt-link>
-                        </v-btn>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-pagination" slot="pagination"></div>
+  <div class="main-swiper">
+    <no-ssr>
+      <div v-swiper:mySwiper1="swiperFadeLoop" class="swiper-background">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide zomato--banner__swiper" v-for="(banner, index) in bannerSlide" :key="index">
+            <img src="~/static/city.jpg"/>
+            <div class="plr-15 swiper-slide-content d-flex">
+              <h3 class="mb-2 mt-4">{{banner.header}}</h3>
+              <p  class="mb-5">{{banner.content}}</p>
+              <div class="swiper-slide-button mt-auto d-flex">
+                <v-btn color="white" class="flex-1">
+                  <nuxt-link to="/investasi">Investasi Sekarang</nuxt-link>
+                </v-btn>
+                <v-btn outline color="white" class="flex-1">
+                  <nuxt-link to="/pelajari">Pelajari Lebih Lanjut</nuxt-link>
+                </v-btn>
               </div>
+            </div>
           </div>
-        </no-ssr>
-</div>
+          <div class="swiper-pagination" slot="pagination"></div>
+        </div>
+      </div>
+    </no-ssr>
+  </div>
 </template>
 
 <script>

@@ -5,13 +5,25 @@
       fixed
       app
       class="top-menu bg--trans" id="navbar"
+      v-if="transparent"
     >
         <div class="main d-flex">
-            <div class="top-menu--logo">
-                <img src="~/static/logo/layer 2.png" v-if="isWhite" />
-                <img src="~/static/logo/layer 2.1.png" v-else />
-            </div>
-            <div class="top-menu--caption">TKB 90 : <strong>98%</strong></div>
+            <nuxt-link :to="{path: backLink}" exact>
+                <v-icon>arrow_back</v-icon>
+            </nuxt-link>
+        </div>
+    </v-toolbar>
+    <v-toolbar
+      fixed
+      app
+      class="top-menu top-menu--white"
+      v-else
+    >
+        <div class="main d-flex">
+            <nuxt-link :to="{path: backLink}" exact class="d-flex">
+                <v-icon class="text-white mr-2">arrow_back</v-icon>
+                <span>{{textLink}}</span>
+            </nuxt-link>
         </div>
     </v-toolbar>
   </div>
@@ -19,6 +31,12 @@
 
 <script>
 export default {
+  props: {
+    backLink: String,
+    transparent: Boolean,
+    textLink: String
+
+  },
   data() {
     return {
         isWhite: true

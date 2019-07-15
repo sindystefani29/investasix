@@ -30,7 +30,7 @@
             <div class="wording-column--title">Kalkulator Finansial</div>
             <div class="wording-column--caption">Rencanakan masa depan mu hari ini</div>
             <p>Hitung Rencana Pendanaan mu unutuk mendapatkan kondisi keuangan yang terencana di mas depan</p>
-            <v-btn color="#A71E22" class="m-auto wording-button">
+            <v-btn color="#A71E22" class="m-auto wording-button custom-button">
                 <nuxt-link to="/investasi">Rencanakan Sekarang</nuxt-link>
             </v-btn>
         </div>
@@ -41,7 +41,7 @@
             <div class="wording-column--title">Auto Invest</div>
             <div class="wording-column--caption">Solusi hemat waktu dengan hasil optimal</div>
             <p>Investasi Otomatis sesuai dengan kriteria yang sudah ditentukan oleh anda. Fitur ini bertujuan untuk memudahkan investor dan meningkatkan produktivitas dana investasi.</p>
-            <v-btn color="#A71E22" class="m-auto wording-button">
+            <v-btn color="#A71E22" class="m-auto wording-button custom-button">
                 <nuxt-link to="/investasi">Setup Auto Invest</nuxt-link>
             </v-btn>
         </div>
@@ -52,7 +52,7 @@
             <div class="wording-column--title">Refer Your Friend</div>
             <div class="wording-column--caption">Referensikan temankamu</div>
             <p>Ajak teman kamu untuk bergabung disini dan jadilah pahlawan bagi perusahaan yang membutuhkan dana</p>
-            <v-btn color="#A71E22" class="m-auto wording-button">
+            <v-btn color="#A71E22" class="m-auto wording-button custom-button">
                 <nuxt-link to="/investasi">Refer Now</nuxt-link>
             </v-btn>
         </div>

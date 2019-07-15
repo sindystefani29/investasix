@@ -1,10 +1,49 @@
+.theme--light.application {
+  color: #231F20;
+}
+
 .v-content {
-  padding-bottom: 56px !important;
+  padding-bottom: 50px !important;
   padding-top: 0 !important;
+}
+
+.v-content__wrap {
+  min-height: 100vh;
+}
+
+.v-btn {
+  padding: 0;
+  height: 100%;
 }
 
 .v-btn__content a {
   text-transform: capitalize;
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.d-flex > * {
+  -webkit-box-flex: inherit !important;
+      -ms-flex: inherit !important;
+          flex: inherit !important;
+}
+
+.d-flex > .flex-1 {
+  -webkit-box-flex: 1 !important;
+      -ms-flex: 1 1 auto !important;
+          flex: 1 1 auto !important;
 }
 
 .nuxt-link-active {
@@ -27,6 +66,11 @@ img {
      object-fit: cover;
 }
 
+.icon-img {
+  width: 17px;
+  height: 17px;
+}
+
 .main {
   max-width: 48rem;
   margin: auto !important;
@@ -34,9 +78,41 @@ img {
   height: 100%;
 }
 
+.custom-button {
+  width: 200px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+}
+
 .plr-15 {
   padding-left: 15px !important;
   padding-right: 15px !important;
+}
+
+.pt-65 {
+  padding-top: 65px;
+}
+
+.h-120 {
+  height: 120px;
+}
+
+.h-135 {
+  height: 135px;
+}
+
+.text-grey {
+  color: #999999;
+}
+
+.text-black {
+  color: #231F20;
+}
+
+.text-white {
+  color: #fff;
 }
 
 .bg--white {
@@ -45,6 +121,10 @@ img {
 
 .bg--grey {
   background-color: #EAEAEA;
+}
+
+.bg--trans {
+  background-color: transparent !important;
 }
 
 .line--vertical {
@@ -95,14 +175,32 @@ img {
   line-height: 14px;
 }
 
+.bottom-menu .v-toolbar__content {
+  padding: 0px !important;
+  height: 50px !important;
+}
+
+.bottom-menu--button {
+  margin: 0;
+}
+
+.bottom-menu--button a {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+  height: 50px;
+}
+
 .top-menu {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
-  background-color: transparent !important;
 }
 
 .top-menu .v-toolbar__content {
   padding: 0;
+  height: 50px !important;
 }
 
 .top-menu--caption {
@@ -112,6 +210,10 @@ img {
   font-size: 14px;
   line-height: 19px;
   text-align: right;
+}
+
+.top-menu .v-icon {
+  color: #fff;
 }
 
 .top-menu .main {
@@ -124,8 +226,16 @@ img {
   padding: 13px;
 }
 
+.top-menu span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #231F20;
+}
+
 .top-menu--white {
-  background-color: white !important;
+  background-color: #fff !important;
   -webkit-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12) !important;
@@ -136,14 +246,13 @@ img {
   color: #000 !important;
 }
 
-.top-menu--white .v-toolbar__content {
-  height: 40px !important;
+.top-menu--white .v-icon {
+  color: #A71E22;
 }
 
 .main-swiper .swiper-slide {
   position: relative;
-  height: 85vh;
-  max-height: 500px;
+  height: 500px;
 }
 
 .main-swiper .swiper-slide img {
@@ -176,18 +285,17 @@ img {
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
-  letter-spacing: 0.5px;
 }
 
 .main-swiper .swiper-slide-content button {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 10px;
-  line-height: 19px;
+  height: 40px;
 }
 
 .main-swiper .swiper-slide-content button a {
-  padding: 10px 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
   color: #fff;
 }
 
@@ -225,7 +333,6 @@ img {
 }
 
 .progress-investasi .thumbnail-image {
-  height: 120px;
   position: relative;
 }
 
@@ -239,6 +346,7 @@ img {
   position: absolute;
   padding: 10px;
   height: 100%;
+  width: 100%;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(35.42%, rgba(83, 9, 11, 0)), to(#231F20));
   background: linear-gradient(180deg, rgba(83, 9, 11, 0) 35.42%, #231F20 100%);
   top: 0;
@@ -260,10 +368,10 @@ img {
   padding: 2px 4px;
   font-size: 8px;
   line-height: 11px;
+  white-space: nowrap;
 }
 
 .progress-investasi .thumbnail-detail {
-  margin-top: 12px;
   margin-bottom: 15px;
 }
 
@@ -322,6 +430,9 @@ img {
   font-size: 11px;
   line-height: 12px;
   color: #B9B9B9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .progress-investasi .thumbnail-button {
@@ -400,6 +511,7 @@ img {
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
+  margin: 3px 0;
 }
 
 .wording-investasix .wording-column p {
@@ -450,5 +562,291 @@ img {
   width: 100px;
   height: 100px;
   margin-bottom: 12px;
+}
+
+.kampanye-detil--frekuensi {
+  border: 1px solid #EAEAEA;
+  border-radius: 2px;
+  padding: 15px;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.kampanye-detil--frekuensi .v-icon {
+  font-size: 6px;
+  color: #B9B9B9;
+}
+
+.kampanye-detil--frekuensi > div {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.kampanye-detil--link {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #231F20;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #EAEAEA;
+  padding: 13px;
+}
+
+.kampanye-detil--link .v-icon {
+  color: #A71E22;
+}
+
+.kampanye-detil--investasi {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.kampanye-detil--investasi > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 20px;
+}
+
+.kampanye-detil--investasi span {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #188CA6;
+}
+
+.kampanye-detil--investasi a {
+  color: #A71E22;
+  text-decoration: underline;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.kampanye-detil h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.kampanye-detil h4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.kampanye-detil h5 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.kampanye-detil p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.total-investasi--detail {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0px;
+}
+
+.total-investasi h4 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.total-dana-terima--detail {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.total-dana-terima h4 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.total-dana-terima h5 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #188CA6;
+}
+
+.total-dana-terima span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.identitas-usaha--detail span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 15px;
+  color: #999999;
+}
+
+.identitas-usaha--detail h4 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.identitas-usaha--detail p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #999999;
+}
+
+.highlight-keuangan--container {
+  border: 1px solid #EAEAEA;
+  border-left: 6px solid #188CA6;
+  padding-right: 6px;
+  padding-left: 15px;
+}
+
+.highlight-keuangan h4 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  color: #A71E22;
+}
+
+.highlight-keuangan span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #999999;
+}
+
+.highlight-keuangan--top {
+  padding: 10px 0px;
+}
+
+.highlight-keuangan--top h5 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.highlight-keuangan--bottom {
+  padding: 10px 0px;
+}
+
+.highlight-keuangan--bottom h5 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.jadwal-angsuran--container {
+  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25), 2px 2px 3px rgba(176, 176, 176, 0.25);
+          box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25), 2px 2px 3px rgba(176, 176, 176, 0.25);
+  border-radius: 2px;
+}
+
+.jadwal-angsuran span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #999999;
+}
+
+.jadwal-angsuran p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+}
+
+.jadwal-angsuran--detail {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.jadwal-angsuran--detail h4 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  color: #A71E22;
+  text-align: right;
+}
+
+.jadwal-angsuran--tanggal {
+  background-color: #188CA6;
+  border: 1px solid #188CA6;
+  padding: 16px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 2px 0 0 2px;
+}
+
+.jadwal-angsuran--tanggal h4 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  color: #fff;
+}
+
+.jadwal-angsuran--tanggal span {
+  color: #fff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 9px;
+  line-height: 12px;
 }
 /*# sourceMappingURL=app.css.map */
