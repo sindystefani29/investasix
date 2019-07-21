@@ -993,7 +993,7 @@ img {
 
 .mulai-investasi--floating button a {
   color: #fff;
-  height: auto;
+  height: 40px;
 }
 
 .mulai-investasi p {
@@ -1002,6 +1002,10 @@ img {
   font-size: 14px;
   line-height: 19px;
   margin: 0;
+}
+
+.mulai-investasi .pengembalian {
+  color: #188CA6;
 }
 
 .mulai-investasi span.md {

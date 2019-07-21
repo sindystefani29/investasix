@@ -92,7 +92,7 @@
             height: 40px;
             a{
                 color: #fff;
-                height: auto;
+                height: 40px;
             }
         }
     }
@@ -102,6 +102,9 @@
         font-size: 14px;
         line-height: 19px;
         margin: 0
+    }
+    .pengembalian{
+        color: $blue
     }
     span.md{
         font-style: normal;
