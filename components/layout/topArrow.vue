@@ -51,14 +51,14 @@ export default {
   methods: {
     onScroll: function (){
       let el = document.getElementById("navbar")
-      if(window.scrollY > 0){
-        if(!el.classList.contains("top-menu--white")){
+      if(this.transparent){
+        if(window.scrollY > 0){
           el.classList.add("top-menu--white")
           this.isWhite = false
+        }else{
+          el.classList.remove("top-menu--white")
+          this.isWhite = true
         }
-      }else{
-        el.classList.remove("top-menu--white")
-        this.isWhite = true
       }
     }
   }

@@ -16,6 +16,7 @@ import axios from 'axios'
 import mulaiInvestasi from '~/components/investasi/mulaiInvestasi.vue'
 import topArrow from '~/components/layout/topArrow.vue'
 export default {
+  scrollToTop: false,
   components: {
     mulaiInvestasi,
     topArrow

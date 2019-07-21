@@ -891,6 +891,18 @@ img {
   border-top: solid 5px transparent;
 }
 
+.mulai-investasi--admin-chat button {
+  width: 105px;
+  height: 35px;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.mulai-investasi--admin-chat button a {
+  color: #fff;
+  height: auto;
+}
+
 .mulai-investasi--user {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -927,7 +939,13 @@ img {
 }
 
 .mulai-investasi--floating {
-  height: 180px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: fixed;
   bottom: 0;
   border-radius: 5px 5px 0px 0px;
@@ -936,6 +954,46 @@ img {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  padding: 15px;
+}
+
+.mulai-investasi--floating-target {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mulai-investasi--floating .v-input {
+  width: 100%;
+}
+
+.mulai-investasi--floating .v-input .v-messages__wrapper, .mulai-investasi--floating .v-input .primary--text {
+  color: #A71E22 !important;
+}
+
+.mulai-investasi--floating .v-input .v-input__slot:after {
+  border-color: #A71E22 !important;
+}
+
+.mulai-investasi--floating .v-btn--outline a {
+  color: #A71E22;
+}
+
+.mulai-investasi--floating .d-flex {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mulai-investasi--floating button {
+  width: 100%;
+  height: 40px;
+}
+
+.mulai-investasi--floating button a {
+  color: #fff;
+  height: auto;
 }
 
 .mulai-investasi p {
@@ -962,6 +1020,13 @@ img {
   color: #999999;
 }
 
+.mulai-investasi span.lg {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+}
+
 .mulai-investasi h4 {
   font-style: normal;
   font-weight: bold;
@@ -976,15 +1041,18 @@ img {
   line-height: 22px;
 }
 
-.mulai-investasi button {
-  width: 105px;
-  height: 35px;
-  margin-right: 0;
-  margin-left: auto;
+.mulai-investasi button a {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
 }
 
-.mulai-investasi button a {
-  color: #fff;
-  height: auto;
+.mulai-investasi .h-180 {
+  height: 180px;
+}
+
+.mulai-investasi .h-156 {
+  height: 156px;
 }
 /*# sourceMappingURL=app.css.map */

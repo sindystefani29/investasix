@@ -13,6 +13,7 @@ import progressInvestasi from '~/components/home/progressInvestasi.vue'
 import wordingInvestasix from '~/components/home/wordingInvestasix.vue'
 export default {
   layout: 'mainNavbar',
+  scrollToTop: false,
   components: {
     mainSwiper,
     progressInvestasi,

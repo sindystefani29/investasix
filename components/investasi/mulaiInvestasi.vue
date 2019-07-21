@@ -51,32 +51,67 @@
                 </div>
             </div>
         </div>
-        <div class="mulai-investasi--user" v-for="(item, index) in detailArr" :key="index">
-            <div class="mulai-investasi--user-chat bg--yellow mb-3">
-                <p>Rp 100.000</p>
+        <div v-for="(dana, index) in tempArr" :key="index">
+            <div class="mulai-investasi--user" v-if="$store.state.nama_perusahaan == detailArr[0].nama && $store.state.dana_pinjaman">
+                <div class="mulai-investasi--user-chat bg--yellow mb-3">
+                    <p>Rp {{dana}}</p>
+                </div>
+            </div>
+            <div class="mulai-investasi--admin" v-if="$store.state.nama_perusahaan == detailArr[0].nama && $store.state.dana_pinjaman">
+                <div class="mulai-investasi--admin-chat bg--white mb-3">
+                    <p>Berdasarkan nominal yang kamu masukkan, berikut adalah Target pengembalian</p>
+                </div>
             </div>
         </div>
-        <div class="mulai-investasi--admin">
-            <div class="mulai-investasi--admin-chat bg--white mb-3">
-                <p>Berdasarkan nominal yang kamu masukkan, berikut adalah Target pengembalian</p>
-            </div>
-        </div>
-        <div class="mulai-investasi--floating main">
+        <div class="mulai-investasi--floating d-flex main h-180" v-if="kalkulasi">
             <h4>Jumlah Investasi</h4>
+            <div class="d-flex">
+                <v-subheader class="pl-0">Rp</v-subheader>
+                <v-text-field
+                    type="text"
+                    label="Masukkan Nominal"
+                    hint="Minimal Pinjaman 100.000 rupiah"
+                    v-model="danaPinjaman"
+                ></v-text-field>
+            </div>
+            <v-btn color="#A71E22" class="ma-0 d-flex" @click="kalkulasiPengembalian()">
+                <a>Kalkulasi Pengembalian</a>
+            </v-btn>
+        </div>
+        <div class="mulai-investasi--floating d-flex main h-156" v-else>
+            <div class="d-flex mulai-investasi--floating-target">
+                <span class="md">Target Pengembalian</span>
+                <h5>Rp {{targetPengembalian}}</h5>
+                <span class="lg">Biaya pokok {{danaPinjaman}} + Untung bunga 15% {{untungBunga}}</span>
+            </div>
+            <div class="d-flex">
+                <v-btn outline color="#A71E22" class="flex-1" @click="kalkulasi = !kalkulasi">
+                  <a>Ganti Nominal</a>
+                </v-btn>
+                <v-btn color="#A71E22" class="flex-1">
+                  <nuxt-link to="/pelajari">Lanjut</nuxt-link>
+                </v-btn>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
 import { investasiList } from '../../assets/js/dummyData'
+import { setTimeout } from 'timers';
 export default {
     props: {
       param: String
     },
     data () {
       return {
+        tempArr: [],
         investasiList,
-        danaSaatIni : '100.000.000'
+        danaSaatIni : '100.000.000',
+        danaPinjaman : '',
+        untungBunga: '',
+        targetPengembalian : '',
+        kalkulasi: true
       }
     },
     computed: {
@@ -84,6 +119,32 @@ export default {
         let arr = this.investasiList.filter(field => this.param == field.id)
         return arr
       }
+    },
+    mounted() {
+        if(this.$store.state.nama_perusahaan == this.detailArr[0].nama && this.$store.state.dana_pinjaman){
+            this.tempArr.push(this.$store.state.dana_pinjaman)
+            this.untungBunga = this.$store.state.dana_pinjaman * 0.15
+            this.targetPengembalian = Number(this.$store.state.dana_pinjaman)+Number(this.untungBunga)
+            this.kalkulasi = false
+        }
+        setTimeout(this.toBottom, 100)
+    },
+    methods: {
+        toBottom(){
+            window.scrollTo(0, document.body.scrollHeight)
+        },
+        kalkulasiPengembalian(){
+            let obj = {
+                nama_perusahaan: this.detailArr[0].nama,
+                dana_pinjaman: this.danaPinjaman
+            }
+            this.$store.commit('addDana', obj)
+            this.untungBunga = this.danaPinjaman * 0.15
+            this.targetPengembalian = Number(this.danaPinjaman)+Number(this.untungBunga)
+            this.tempArr.push(this.danaPinjaman)
+            this.kalkulasi = false
+            setTimeout(this.toBottom, 100)
+        }
     }
 }
 </script>
