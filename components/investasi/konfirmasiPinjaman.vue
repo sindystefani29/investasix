@@ -1,7 +1,7 @@
 <template>
     <div class="plr-15 mulai-investasi">
         <div class="mulai-investasi--admin" v-for="(item, index) in detailArr" :key="index">
-            <div class="mulai-investasi--admin-chat bg--white mb-3">
+            <div class="bg--white mb-3">
                 <span class="sm">Kampanye</span>
                 <p><strong>{{item.nama}} {{item.identitas.detil_usaha}}</strong></p>
                 <div class="d-flex mt-3 mb-3">

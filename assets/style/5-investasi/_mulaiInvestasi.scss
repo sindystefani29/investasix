@@ -79,11 +79,6 @@
                 border-color: $red !important;
             }
         }
-        .v-btn--outline{
-            a{
-                color: $red;
-            }
-        }
         .d-flex {
             align-items: center;
         }
@@ -94,6 +89,24 @@
                 color: #fff;
                 height: 40px;
             }
+        }
+    }
+    &--done{
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        button{
+            width: 100%;
+            height: 40px;
+            a{
+                color: #fff;
+                height: 40px;
+            }
+        }
+    }
+    .v-btn--outline{
+        a{
+            color: $red;
         }
     }
     p{
@@ -126,6 +139,13 @@
         font-size: 12px;
         line-height: 16px;
     }
+    h3{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 27px;
+        color: $blue;
+    }
     h4{
         font-style: normal;
         font-weight: bold;
@@ -151,5 +171,8 @@
     }
     .h-156{
         height: 156px;
+    }
+    .w-100{
+        width: 100%
     }
 }
