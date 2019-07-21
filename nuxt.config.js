@@ -37,6 +37,7 @@ export default {
   ** Global CSS
   */
   css: [
+    'normalize.css',
     '~/assets/style/app.styl',
     '~/assets/style/app.css',
     '~/assets/style/swiper.css'
