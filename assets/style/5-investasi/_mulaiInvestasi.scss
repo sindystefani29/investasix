@@ -1,0 +1,102 @@
+.mulai-investasi{
+    &--admin{
+        &-chat{
+            padding: 10px;
+            border-radius: 5px;
+            &:first-child{
+                border-radius: 0px 10px 10px 10px;
+                position: relative;
+                &:before{
+                    position: absolute;
+                    left: 0;
+                    top: -8px;
+                    width: 20px;
+                    height: 10px;
+                    content: '';
+                    border-bottom: solid 5px #fff;
+                    border-left: solid 10px #fff;
+                    border-right: solid 10px transparent;
+                    border-top: solid 5px transparent;
+                }
+            }
+        }
+    }
+    &--user{
+        display: flex;
+        flex-direction: column;
+        &-chat{
+            align-self: flex-end;
+            padding: 10px;
+            border-radius: 5px;
+            &:first-child{
+                border-radius: 10px 0px 10px 10px;
+                position: relative;
+                &:before{
+                    position: absolute;
+                    right: 0;
+                    top: -8px;
+                    width: 20px;
+                    height: 10px;
+                    content: '';
+                    border-bottom: solid 5px $yellow;
+                    border-right: solid 10px $yellow;
+                    border-left: solid 10px transparent;
+                    border-top: solid 5px transparent;
+                }
+            }
+        }
+    }
+    &--floating{
+        height: 180px;
+        position: fixed;
+        bottom: 0;
+        border-radius: 5px 5px 0px 0px;
+        background-color: #fff;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    p{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        margin: 0
+    }
+    span.md{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color: $grey;
+    }
+    span.sm{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 15px;
+        color: $grey;
+    }
+    h4{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    h5{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    button{
+        width: 105px;
+        height: 35px;
+        margin-right: 0;
+        margin-left: auto;
+        a{
+            color: #fff;
+            height: auto;
+        }
+    }
+}

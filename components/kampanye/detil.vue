@@ -10,7 +10,7 @@
           </div>
           <div class="thumbnail-container plr-15">
               <div class="thumbnail-detail d-flex mt-4">
-                  <div class="flex-1">
+                  <div class="pr-3 flex-1">
                       <div class="thumbnail-detail--title">Jumlah Pinjaman</div>
                       <p>Rp {{item.jumlah_pinjaman}}</p>
                   </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="main bg--white">
+  <div class="main bg--white pb-50">
     <topArrow 
       backLink = "/"
       :transparent = "true"
@@ -8,7 +8,7 @@
       :param = "paramId"
     />
     <singleButton 
-      buttonLink = "/investasi"
+      :buttonLink = "linkMulaiInvestasi"
       textButton = "Investasi Sekarang"
     />
   </div>
@@ -27,7 +27,8 @@ export default {
   },
   async asyncData({ params }) {
     return {
-       paramId: params.id
+       paramId: params.id,
+       linkMulaiInvestasi: `/mulai-investasi/${params.id}`
     } 
   }
 }
