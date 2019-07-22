@@ -138,6 +138,10 @@ img {
   background-color: #F3E249 !important;
 }
 
+.bg--blue {
+  background-color: #b6c7d8 !important;
+}
+
 .line--vertical {
   border: 0.5px solid #EAEAEA;
   height: auto;
