@@ -2,7 +2,7 @@ import VuetifyLoaderPlugin from 'vuetify-loader/lib/plugin'
 import pkg from './package'
 
 export default {
-  mode: 'universal',/*
+  mode: 'universal',
   server : {
       port:3000,
       host:'202.67.14.130',
