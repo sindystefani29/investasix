@@ -558,6 +558,10 @@ img {
 .wording-investasix .wording-row p {
   text-align: center;
   margin-bottom: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .wording-investasix .wording-row--content {
