@@ -1,5 +1,5 @@
 <template>
-  <div class="main bg--white">
+  <div class="main bg--white pb-50">
     <portfolio/>
   </div>
 </template>

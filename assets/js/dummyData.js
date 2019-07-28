@@ -424,3 +424,24 @@ export const investasiList = [
         ]
     }
 ]
+
+export const portfolio = [
+    {
+        "id" : "NO845-VE-1923",
+        "on_process" : "1.000.000",
+        "pinjaman_terakhir" : "10 Mei 2019",
+        "status" : "on_process"
+    },
+    {
+        "id" : "NO845-VE-1924",
+        "on_process" : "1.000.000",
+        "pinjaman_terakhir" : "11 Mei 2019",
+        "status" : "on_process"
+    },
+    {
+        "id" : "NO845-VE-1925",
+        "on_process" : "1.000.000",
+        "pinjaman_terakhir" : "12 Mei 2019",
+        "status" : "on_process"
+    }
+]
