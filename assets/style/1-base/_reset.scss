@@ -37,8 +37,10 @@
 
 .nuxt-link-active{
     color: $red !important;
-    .v-icon{
-        color: $red !important;
+    svg{
+        path{
+            fill: $red !important;
+        }
     }
 }
 
@@ -122,6 +124,9 @@ img{
     }
     &--blue{
         background-color: $light_blue !important;
+    }
+    &--red{
+        background-color: $red !important;
     }
 }
 

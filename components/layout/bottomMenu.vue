@@ -7,7 +7,7 @@
       class="bg--white bottom-menu"
     >
         <div class="main d-flex">
-            <nuxt-link v-for="(menu, index) in bottomMenu" :key="index" :to="menu.to" class="d-flex flex-1">
+            <nuxt-link v-for="(menu, index) in bottomMenu" :key="index" :to="menu.to" class="d-flex flex-1" exact>
                 <v-btn
                     icon
                 >
