@@ -21,7 +21,6 @@ import singleButton from '~/components/layout/singleButton.vue'
 import topArrow from '~/components/layout/topArrow.vue'
 import konfirmasiPinjaman from '~/components/investasi/konfirmasiPinjaman.vue'
 export default {
-  scrollToTop: false,
   components: {
     singleButton,
     topArrow,

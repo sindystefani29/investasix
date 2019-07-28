@@ -44,6 +44,12 @@ export default {
   },
   mounted () {
     window.addEventListener('scroll', this.onScroll)
+    if(this.transparent){
+      if(window.top > 0){
+        el.classList.add("top-menu--white")
+        this.isWhite = false
+      }
+    }
   },
   destroyed (){
     window.removeEventListener('scroll', this.onScroll)

@@ -10,7 +10,6 @@
 import axios from 'axios'
 import donePinjaman from '~/components/investasi/donePinjaman.vue'
 export default {
-  scrollToTop: false,
   components: {
     donePinjaman
   },

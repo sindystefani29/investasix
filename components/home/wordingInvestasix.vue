@@ -4,22 +4,22 @@
         <div class="wording-row plr-15 d-flex mt-4">
             <div class="wording-row--content">
                 <img src="~/static/logo/clock.png" />
-                <div class="wording-row--title">Lebih Cepat</div>
+                <div class="wording-row--title mb-1">Lebih Cepat</div>
                 <p>Proses administrasi bisa dimulai sebelum dana dibutuhkan.</p>
             </div>
             <div class="wording-row--content">
                 <img src="~/static/logo/money.png" />
-                <div class="wording-row--title">Lebih Murah</div>
+                <div class="wording-row--title mb-1">Lebih Murah</div>
                 <p>Gunakan simulasi bunga pinjaman untuk bunga yang lebih rendah.</p>
             </div>
             <div class="wording-row--content">
                 <img src="~/static/logo/hand.png" />
-                <div class="wording-row--title">Lebih Transparan</div>
+                <div class="wording-row--title mb-1">Lebih Transparan</div>
                 <p>Semua biaya tertera dengan jelas sejak awal.</p>
             </div>
             <div class="wording-row--content">
                 <img src="~/static/logo/asix.png" />
-                <div class="wording-row--title">Lebih Asix</div>
+                <div class="wording-row--title mb-1">Lebih Asix</div>
                 <p>Dapatkan pengalaman seru dan informasi penting.</p>
             </div>
         </div>

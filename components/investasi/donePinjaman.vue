@@ -81,7 +81,7 @@
                         <a>Lihat Kontrak</a>
                     </v-btn>
                 </div>
-                <div class="d-flex mt-2">
+                <div class="d-flex mt-2 mb-3">
                     <v-btn color="#A71E22" class="flex-1 ma-0">
                         <nuxt-link :to="{path: `/`}" exact>Selesai</nuxt-link>
                     </v-btn>
