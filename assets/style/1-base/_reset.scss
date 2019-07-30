@@ -1,3 +1,20 @@
+html, body {
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+}
+
+html {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+}
+  
+@-moz-document url-prefix() {
+    body {
+      font-weight: lighter !important;
+    }
+}
+
 .theme--light.application{
     color: $black;
 }
@@ -61,7 +78,6 @@ img{
 .main{
     max-width: 48rem;
     margin: auto !important;
-    font-family: 'Nunito Sans';
     height: 100%;
 }
 
