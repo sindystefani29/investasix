@@ -17,6 +17,11 @@
             .v-progress-linear{
                 margin: 6px 0 !important;
             }
+            .v-progress-linear__background{
+                border: 0.3px solid;
+                background-color: $light_grey !important;
+                border-color: $grey !important;
+            }
         }
         &-image{
             position: relative;
@@ -82,11 +87,10 @@
             }
         }
         &-done{
-            background: $blue;
+            background: $light_grey;
             border-radius: 2px;
             width: 100%;
             padding: 10px;
-            color: #fff;
             text-align: center;
             font-style: normal;
             font-weight: normal;

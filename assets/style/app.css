@@ -385,6 +385,12 @@ img {
   margin: 6px 0 !important;
 }
 
+.progress-investasi .thumbnail-container .v-progress-linear__background {
+  border: 0.3px solid;
+  background-color: #EAEAEA !important;
+  border-color: #999999 !important;
+}
+
 .progress-investasi .thumbnail-image {
   position: relative;
 }
@@ -465,11 +471,10 @@ img {
 }
 
 .progress-investasi .thumbnail-done {
-  background: #188CA6;
+  background: #EAEAEA;
   border-radius: 2px;
   width: 100%;
   padding: 10px;
-  color: #fff;
   text-align: center;
   font-style: normal;
   font-weight: normal;

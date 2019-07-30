@@ -9,7 +9,7 @@
                 </div>
             </div>
             <div class="thumbnail-detail d-flex mt-3">
-                <div class="pr-3 flex-1">
+                <div class="pr-2 flex-1">
                     <div class="thumbnail-detail--title">Jumlah Pinjaman</div>
                     <p>Rp {{item.jumlah_pinjaman}}</p>
                 </div>
