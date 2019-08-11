@@ -56,7 +56,7 @@
                         <nuxt-link class="mt-1 mb-2" :to="{path: `/kampanye/${process.id}`}"><h4>{{filterPerusahaan(process.id)}}</h4></nuxt-link>
                         <span>Total pinjaman on process</span>
                         <h4 class="mt-1 mb-1">Rp {{process.on_process}}</h4>
-                        <span>Pemberian pinjaman terakhir pada {{process.pinjaman_terakhir}}</span>
+                        <span>Pemberian pinjaman terakhir pada {{process.pemberian_pinjaman}}</span>
                         <div class="line--horizontal mt-3 mb-3"></div>
                     </div>
                 </div>
@@ -95,7 +95,7 @@
                         <nuxt-link class="mt-1 mb-2" :to="{path: `/kampanye/${done.id}`}"><h4>{{filterPerusahaan(done.id)}}</h4></nuxt-link>
                         <span>Total pinjaman on process</span>
                         <h4 class="mt-1 mb-1">Rp {{done.on_process}}</h4>
-                        <span>Pemberian pinjaman terakhir pada {{done.pinjaman_terakhir}}</span>
+                        <span>Pemberian pinjaman terakhir pada {{done.pemberian_pinjaman}}</span>
                         <div class="line--horizontal mt-3 mb-3"></div>
                     </div>
                 </div>

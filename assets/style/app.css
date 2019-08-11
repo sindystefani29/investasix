@@ -133,6 +133,10 @@ img {
   height: 120px;
 }
 
+.h-129 {
+  height: 129px;
+}
+
 .h-135 {
   height: 135px;
 }
@@ -947,7 +951,7 @@ img {
 }
 
 .mulai-investasi--admin-chat button a {
-  color: #fff;
+  color: #fff !important;
   height: auto;
 }
 

@@ -89,7 +89,7 @@
                   <a>Ganti Nominal</a>
                 </v-btn>
                 <v-btn color="#A71E22" class="flex-1">
-                  <nuxt-link :to="{path: `/mulai-investasi/${param}/konfirmasi-pinjaman`}">Lanjut</nuxt-link>
+                  <nuxt-link :to="{path: `/investasi/${param}/konfirmasi-pinjaman`}">Lanjut</nuxt-link>
                 </v-btn>
             </div>
         </div>

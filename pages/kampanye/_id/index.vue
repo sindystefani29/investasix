@@ -28,7 +28,7 @@ export default {
   async asyncData({ params }) {
     return {
        paramId: params.id,
-       linkMulaiInvestasi: `/mulai-investasi/${params.id}`
+       linkMulaiInvestasi: `/investasi/${params.id}`
     } 
   }
 }
