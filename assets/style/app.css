@@ -73,6 +73,24 @@ html {
           flex: 1 1 auto !important;
 }
 
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.align-stretch {
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+}
+
+.justify-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .nuxt-link-active {
   color: #A71E22 !important;
 }
@@ -151,6 +169,10 @@ img {
 
 .text-white {
   color: #fff;
+}
+
+.text-blue {
+  color: #188CA6;
 }
 
 .bg--white {
@@ -1260,6 +1282,111 @@ img {
 
 @media only screen and (min-width: 321px) {
   .portfolio h3, .portfolio .bg--red {
+    padding: 15px;
+  }
+}
+
+.dana h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.dana h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.dana h4 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 23px;
+}
+
+.dana .bg--red {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.dana button a {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.dana .v-btn--outline a {
+  color: #fff;
+}
+
+.dana .v-btn--icon {
+  width: 20px;
+  height: 20px;
+}
+
+.dana .v-btn--icon svg:nth-child(2) {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.dana p {
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.dana a {
+  color: #231F20;
+}
+
+.dana span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 15px;
+}
+
+.dana--detail {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dana--detail a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.dana--detail > div {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+}
+
+@media only screen and (max-width: 320px) {
+  .dana h4, .dana .bg--red {
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 321px) {
+  .dana h4, .dana .bg--red {
     padding: 15px;
   }
 }

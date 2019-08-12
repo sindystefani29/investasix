@@ -52,6 +52,18 @@ html {
     }
 }
 
+.align-center{
+    align-items: center;
+}
+
+.align-stretch{
+    align-self: stretch;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
 .nuxt-link-active{
     color: $red !important;
     svg{
@@ -125,6 +137,9 @@ img{
     }
     &-white{
         color: #fff;
+    }
+    &-blue{
+        color: $blue;
     }
 }
 

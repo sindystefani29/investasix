@@ -445,3 +445,66 @@ export const portfolio = [
         "status" : "on_process"
     }
 ]
+
+export const transaksi = [
+    {
+        "id" : "trans-001",
+        "tanggal" : "10/06/2019 16:00",
+        "transaksi" : "Payout Cicilan",
+        "kampanye" : "Perusahaan jasa Reparasi Tangki migas di jakarta Selatan no 1234123123",
+        "biaya_pokok" : "0",
+        "bunga" : "5.875",
+        "denda" : "0",
+        "total" : "5.875"
+    },
+    {
+        "id" : "trans-002",
+        "tanggal" : "10/06/2019 16:00",
+        "transaksi" : "Payout Bunga Lending",
+        "kampanye" : "Perusahaan jasa Reparasi Tangki migas di jakarta Selatan no 1234123123",
+        "biaya_pokok" : "0",
+        "bunga" : "100.000",
+        "denda" : "0",
+        "total" : "100.000"
+    },
+    {
+        "id" : "trans-003",
+        "tanggal" : "10/06/2019 16:00",
+        "transaksi" : "Payout Cicilan",
+        "kampanye" : "Perusahaan jasa Reparasi no 1234123123",
+        "biaya_pokok" : "0",
+        "bunga" : "5.875",
+        "denda" : "0",
+        "total" : "5.875"
+    },
+    {
+        "id" : "trans-004",
+        "tanggal" : "10/06/2019 16:00",
+        "transaksi" : "Payout Bunga Lending",
+        "kampanye" : "Perusahaan jasa Reparasi Tangki migas di jakarta Selatan no 1234123123",
+        "biaya_pokok" : "0",
+        "bunga" : "100.000",
+        "denda" : "0",
+        "total" : "100.000"
+    },
+    {
+        "id" : "trans-005",
+        "tanggal" : "10/06/2019 16:00",
+        "transaksi" : "Payout Cicilan",
+        "kampanye" : "Perusahaan jasa Reparasi no 1234123123",
+        "biaya_pokok" : "0",
+        "bunga" : "5.875",
+        "denda" : "0",
+        "total" : "5.875"
+    },
+    {
+        "id" : "trans-006",
+        "tanggal" : "10/06/2019 16:00",
+        "transaksi" : "Payout Bunga Lending",
+        "kampanye" : "Perusahaan jasa Reparasi Tangki migas di jakarta Selatan no 1234123123",
+        "biaya_pokok" : "0",
+        "bunga" : "100.000",
+        "denda" : "0",
+        "total" : "100.000"
+    }
+]
