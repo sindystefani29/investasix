@@ -40,7 +40,8 @@ export default {
     'normalize.css',
     '~/assets/style/app.styl',
     '~/assets/style/app.css',
-    '~/assets/style/swiper.css'
+    '~/assets/style/swiper.css',
+    '~/assets/style/outlineText.css'
   ],
 
   /*

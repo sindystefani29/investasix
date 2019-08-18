@@ -55,6 +55,27 @@ html {
           justify-content: center;
 }
 
+.v-dialog {
+  width: 300px !important;
+  border-radius: 10px;
+}
+
+.v-dialog .v-card__title {
+  padding-bottom: 10px !important;
+}
+
+.v-dialog .v-card__title h3 {
+  margin: auto;
+}
+
+.v-dialog .v-card__text, .v-dialog .v-card__title {
+  padding: 15px;
+}
+
+.v-dialog p {
+  margin-bottom: 15px;
+}
+
 .d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -89,6 +110,13 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .nuxt-link-active {
@@ -141,6 +169,10 @@ img {
 
 .pb-180 {
   padding-bottom: 180px !important;
+}
+
+.pt-50 {
+  padding-top: 50px;
 }
 
 .pt-65 {
@@ -1351,6 +1383,10 @@ img {
   color: #231F20;
 }
 
+.dana .pure-material-textfield-outlined {
+  width: 100%;
+}
+
 .dana span {
   font-style: normal;
   font-weight: normal;
@@ -1377,6 +1413,21 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 60%;
+}
+
+.dana--bank {
+  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.dana--warning p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 @media only screen and (max-width: 320px) {

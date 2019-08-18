@@ -42,6 +42,23 @@ html {
     }
 }
 
+.v-dialog{
+    width: 300px !important;
+    border-radius: 10px;
+    .v-card__title{
+        h3{
+            margin: auto
+        }
+        padding-bottom: 10px !important;
+    }
+    .v-card__text, .v-card__title{
+        padding: 15px;
+    }
+    p{
+        margin-bottom: 15px;
+    }
+}
+
 .d-flex {
     display: flex;
     & > *{
@@ -62,6 +79,12 @@ html {
 
 .justify-between{
     justify-content: space-between;
+}
+
+.flex{
+    &-column{
+        flex-direction: column;
+    }
 }
 
 .nuxt-link-active{
@@ -112,6 +135,10 @@ img{
 
 .pb-180{
     padding-bottom: 180px !important;
+}
+
+.pt-50{
+    padding-top: 50px;
 }
 
 .pt-65{
