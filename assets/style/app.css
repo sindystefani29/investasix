@@ -123,7 +123,7 @@ html {
   color: #A71E22 !important;
 }
 
-.nuxt-link-active svg path {
+.nuxt-link-active svg path, .nuxt-link-active svg circle, .nuxt-link-active svg rect {
   fill: #A71E22 !important;
 }
 

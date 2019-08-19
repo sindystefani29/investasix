@@ -40,45 +40,19 @@
                     <path d="M1.98755 4.12903L11.2587 0.919036C12.5578 0.469208 13.913 1.4341 13.913 2.80896V4.12903H1.98755Z" stroke="#333333" stroke-miterlimit="10" stroke-linejoin="round"/>
                     <path d="M14.9068 8.7742V10.8387H12.9192C12.3229 10.8387 11.9254 10.4258 11.9254 9.80646C11.9254 9.1871 12.3229 8.7742 12.9192 8.7742H14.9068ZM15.9006 7.74194H12.9192C11.8261 7.74194 10.9316 8.67098 10.9316 9.80646C10.9316 10.9419 11.8261 11.871 12.9192 11.871H15.9006V7.74194Z" fill="#333333"/>
                   </svg>
+                  <svg v-if="menu.icon == 'lainnya'" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="1" cy="1" r="1" fill="#231F20"/>
+                    <rect x="4" width="12" height="2" rx="1" fill="#231F20"/>
+                    <circle cx="1" cy="7" r="1" fill="#231F20"/>
+                    <rect x="4" y="6" width="12" height="2" rx="1" fill="#231F20"/>
+                    <circle cx="1" cy="13" r="1" fill="#231F20"/>
+                    <rect x="4" y="12" width="12" height="2" rx="1" fill="#231F20"/>
+                  </svg>
                 </v-btn>
                 <span>{{menu.title}}</span>
             </nuxt-link>
-            <a class="d-flex flex-1">
-                <v-btn
-                    icon
-                    @click="rightDrawer = !rightDrawer" 
-                >
-                    <v-icon>format_list_bulleted</v-icon>
-                </v-btn>
-                <span>LAINNYA</span>
-            </a>
         </div>
     </v-toolbar>
-
-    <!--Navigation Drawer Lainnya-->
-    <v-navigation-drawer
-      v-model="rightDrawer"
-      :right="right"
-      temporary
-      fixed
-    >
-      <v-list>
-        <v-list-tile
-          v-for="(item, i) in items"
-          :key="i"
-          :to="item.to"
-          router
-          exact
-        >
-          <v-list-tile-action>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            <v-list-tile-title v-text="item.title" />
-          </v-list-tile-content>
-        </v-list-tile>
-      </v-list>
-    </v-navigation-drawer>
   </div>
 </template>
 
@@ -88,23 +62,6 @@ export default {
     return {
       right: true,
       rightDrawer: false,
-      items: [
-        {
-          icon: 'home',
-          title: 'Lainnya 1',
-          to: '/'
-        },
-        {
-          icon: 'fastfood',
-          title: 'Lainnya 1',
-          to: '/'
-        },
-        {
-          icon: 'person_pin',
-          title: 'Lainnya 1',
-          to: '/'
-        }
-      ],
       bottomMenu: [
           {
               to: '/',
@@ -125,6 +82,11 @@ export default {
               to: '/dana',
               title: 'DANA',
               icon: 'dana'
+          },
+          {
+              to: '/lainnya',
+              title: 'LAINNYA',
+              icon: 'lainnya'
           }
       ]
     }

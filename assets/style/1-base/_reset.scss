@@ -90,7 +90,7 @@ html {
 .nuxt-link-active{
     color: $red !important;
     svg{
-        path{
+        path, circle, rect{
             fill: $red !important;
         }
     }
