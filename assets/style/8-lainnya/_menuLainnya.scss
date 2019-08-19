@@ -1,0 +1,18 @@
+.lainnya{
+    padding: 22px;
+    h5{
+        color: $black;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+    }
+    &--row{
+        display: flex;
+        align-items: flex-start;
+    }
+    &--text{
+        width: 100%;
+        margin-left: 12px;
+    }
+}

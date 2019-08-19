@@ -1,16 +1,16 @@
 <template>
   <div class="main bg--white pb-50">
-    <portfolio/>
+    <menuLainnya/>
   </div>
 </template>
 
 <script>
 import axios from 'axios'
-import portfolio from '~/components/portfolio/portfolio.vue'
+import menuLainnya from '~/components/lainnya/menuLainnya.vue'
 export default {
   layout: 'bottomNavbar',
   components: {
-    portfolio
+    menuLainnya
   }
 }
 </script>

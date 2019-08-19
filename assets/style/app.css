@@ -1441,4 +1441,30 @@ img {
     padding: 15px;
   }
 }
+
+.lainnya {
+  padding: 22px;
+}
+
+.lainnya h5 {
+  color: #231F20;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.lainnya--row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.lainnya--text {
+  width: 100%;
+  margin-left: 12px;
+}
 /*# sourceMappingURL=app.css.map */
