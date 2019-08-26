@@ -61,6 +61,16 @@
                 <p>Silahkan buat kata sandi untuk melindungi akun Anda dengan catatan harus terdiri minimal 8 huruf, minimal 1 huruf kapital, minimal 1 simbol</p>
             </div>
         </div>
+        <div class="mulai-investasi--user" v-if="passwordValidation.isPassword">
+            <div class="mulai-investasi--user-chat bg--yellow mb-3">
+                <p>{{password}}</p>
+            </div>
+        </div>
+        <div class="mulai-investasi--admin" v-if="passwordValidation.isPassword">
+            <div class="mulai-investasi--admin-chat bg--white mb-3">
+                <p>Masukkan Nomor HP yang kamu pakai</p>
+            </div>
+        </div>
         <!--sticky dialog-->
         <div class="mulai-investasi--floating d-flex main h-129" v-if="chooseUser.isChooseUserAction">
             <h4>Anda mendaftar sebagai ...</h4>
@@ -84,7 +94,7 @@
                 </v-btn>
             </div>
         </div>
-        <div class="mulai-investasi--floating d-flex main h-180" v-if="inputEmail.isInputEmailAction">
+        <div class="mulai-investasi--floating d-flex main h-189" v-if="inputEmail.isInputEmailAction">
             <h4>Alamat Email</h4>
             <div class="d-flex">
                 <v-text-field
@@ -98,7 +108,7 @@
                 <a>Kirim</a>
             </v-btn>
         </div>
-        <div class="mulai-investasi--floating d-flex main h-180" v-if="fullName.isFullNameAction">
+        <div class="mulai-investasi--floating d-flex main h-189" v-if="fullName.isFullNameAction">
             <h4>Nama Lengkap</h4>
             <div class="d-flex">
                 <v-text-field
@@ -108,6 +118,25 @@
                 ></v-text-field>
             </div>
             <v-btn color="#A71E22" class="ma-0 d-flex" @click="fullName.isFullName = !fullName.isFullName, fullNameMethod()">
+                <a>Kirim</a>
+            </v-btn>
+        </div>
+        <div class="mulai-investasi--floating d-flex main h-189" v-if="passwordValidation.isPasswordAction">
+            <h4>Password</h4>
+            <div class="d-flex">
+                <v-text-field
+                    v-model="password"
+                    :append-icon="showPassword ? 'visibility' : 'visibility_off'"
+                    :rules="passwordRules"
+                    :type="passwordRules ? 'text' : 'password'"
+                    name="input-10-1"
+                    label="Normal with hint text"
+                    hint="At least 8 characters"
+                    counter
+                    @click:append="showPassword = !showPassword"
+                ></v-text-field>
+            </div>
+            <v-btn color="#A71E22" class="ma-0 d-flex" @click="passwordValidation.isPassword = !passwordValidation.isPassword, passwordMethod()">
                 <a>Kirim</a>
             </v-btn>
         </div>
@@ -141,6 +170,18 @@ export default {
         fullName: {
             isFullName: false,
             isFullNameAction: false
+        },
+        password: '',
+        repeatPassword: '',
+        showPassword: false,
+        passwordRules:[
+            v => !!v || 'Mohon isi password',
+            v => v.length >= 8 || 'Password kurang dari 8 karakter',
+        ],
+        showRepeatPassword: false,
+        passwordValidation:{
+            isPassword: false,
+            isPasswordAction: false
         }
       }
     },
@@ -168,6 +209,7 @@ export default {
         },
         fullNameMethod(){
             this.fullName.isFullNameAction = false
+            this.passwordValidation.isPasswordAction = true
             setTimeout(this.toBottom, 100)
         }
     }

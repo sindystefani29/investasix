@@ -63,7 +63,7 @@
                 </div>
             </div>
         </div>
-        <div class="mulai-investasi--floating d-flex main h-180" v-if="kalkulasi">
+        <div class="mulai-investasi--floating d-flex main h-189" v-if="kalkulasi">
             <h4>Jumlah Investasi</h4>
             <div class="d-flex">
                 <v-subheader class="pl-0">Rp</v-subheader>

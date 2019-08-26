@@ -191,6 +191,22 @@ img {
   height: 135px;
 }
 
+.h-156 {
+  height: 156px;
+}
+
+.h-189 {
+  height: 189px;
+}
+
+.h-269 {
+  height: 269px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
 .text-grey {
   color: #999999;
 }
@@ -1185,18 +1201,6 @@ img {
   font-weight: bold;
   font-size: 14px;
   line-height: 19px;
-}
-
-.mulai-investasi .h-180 {
-  height: 180px;
-}
-
-.mulai-investasi .h-156 {
-  height: 156px;
-}
-
-.mulai-investasi .w-100 {
-  width: 100%;
 }
 
 .portfolio h3 {
