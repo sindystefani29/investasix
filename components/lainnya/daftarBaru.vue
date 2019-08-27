@@ -1,5 +1,13 @@
 <template>
-    <div class="plr-15 mulai-investasi">
+    <div class="plr-15">
+        <div 
+            class="mulai-investasi"
+            :class="{
+                'pb-189': inputEmail.isInputEmailAction || fullName.isFullNameAction,
+                'pb-129': chooseUser.isChooseUserAction || accountType.isAccountTypeAction,
+                'pb-269': passwordValidation.isPasswordAction
+            }"
+        >
         <div class="mulai-investasi--admin">
             <div class="mulai-investasi--admin-chat bg--white mb-3">
                 <p>Halo sahabat Investasix</p>
@@ -121,24 +129,36 @@
                 <a>Kirim</a>
             </v-btn>
         </div>
-        <div class="mulai-investasi--floating d-flex main h-189" v-if="passwordValidation.isPasswordAction">
+        <div class="mulai-investasi--floating d-flex main h-269" v-if="passwordValidation.isPasswordAction">
             <h4>Password</h4>
             <div class="d-flex">
                 <v-text-field
                     v-model="password"
-                    :append-icon="showPassword ? 'visibility' : 'visibility_off'"
+                    :append-icon="showPassword ? 'visibility_off' : 'visibility'"
                     :rules="passwordRules"
-                    :type="passwordRules ? 'text' : 'password'"
+                    :type="showPassword ? 'text' : 'password'"
                     name="input-10-1"
-                    label="Normal with hint text"
-                    hint="At least 8 characters"
+                    label="Password"
                     counter
                     @click:append="showPassword = !showPassword"
+                ></v-text-field>
+            </div>
+            <div class="d-flex">
+                <v-text-field
+                    v-model="repeatPassword"
+                    :append-icon="showRepeatPassword ? 'visibility_off' : 'visibility'"
+                    :rules="repeatPasswordRules"
+                    :type="showRepeatPassword ? 'text' : 'password'"
+                    name="input-10-1"
+                    label="Ulangi Password"
+                    counter
+                    @click:append="showRepeatPassword = !showRepeatPassword"
                 ></v-text-field>
             </div>
             <v-btn color="#A71E22" class="ma-0 d-flex" @click="passwordValidation.isPassword = !passwordValidation.isPassword, passwordMethod()">
                 <a>Kirim</a>
             </v-btn>
+        </div>
         </div>
     </div>
 </template>
@@ -179,6 +199,10 @@ export default {
             v => v.length >= 8 || 'Password kurang dari 8 karakter',
         ],
         showRepeatPassword: false,
+        repeatPasswordRules:[
+            v => !!v || 'Mohon isi password',
+            v => this.password == this.repeatPassword || 'Password tidak cocok',
+        ],
         passwordValidation:{
             isPassword: false,
             isPasswordAction: false

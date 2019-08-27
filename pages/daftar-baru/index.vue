@@ -1,5 +1,5 @@
 <template>
-  <div class="main bg--blue pb-180 pt-65">
+  <div class="main bg--blue pt-65">
     <topArrow 
       backLink = "/lainnya"
       :transparent = "false"
