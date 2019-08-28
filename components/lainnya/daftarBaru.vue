@@ -199,15 +199,13 @@
                 <div class="d-flex">
                     <div class="px-1 kodeOTP" v-for="i in 6" :key="i">
                         <v-text-field
-                            type="number"
+                            type="text"
                             :name="`value${i}`"
-                            :autofocus=" i == 0 ? 'true' : false "
-                            @:keyup="moveCursor($event, i)"
-                            @keypress="isNumeric($event)"
-                            @input="maxLengthCheck($event)"
-                            maxlength = "1"
-                            min = "1"
-                            max = "1"
+                            :autofocus="true"
+                            @keyup="moveCursor($event, i)"
+                            @keypress="isNumeric($event), maxLengthCheck($event)"
+                            max=1
+                            maxlength=1
                         ></v-text-field>
                     </div>
                 </div>
@@ -310,11 +308,8 @@ export default {
             setTimeout(this.toBottom, 100)
         },
         moveCursor(e, index){
-            if(e.target.value.length > 0){
-                if(index !== 6){
-                    document.getElementsByClassName('kodeOTP')[index].children[0].children[0].children[0].children[0].children[0].focus()
-                }
-                e.target.value.slice(0,1)
+            if(e.target.value.length > 0 && index !== 6){
+                document.getElementsByClassName('kodeOTP')[index].children[0].children[0].children[0].children[0].children[0].focus()
             }
         },
         isNumeric (evt) {
@@ -327,9 +322,10 @@ export default {
                 if(theEvent.preventDefault) theEvent.preventDefault();
             }
         },
-        maxLengthCheck(object) {
-            if (object.value.length > 1)
-            object.value = object.value.slice(0, 1)
+        maxLengthCheck(e) {
+            if(e.target.value.length >= 1){
+                e.target.value = e.target.value.slice(0,1)
+            }
         }
     }
 }

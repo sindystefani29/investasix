@@ -1167,6 +1167,11 @@ img {
   color: #188CA6;
 }
 
+.mulai-investasi .kodeOTP .v-text-field input {
+  font-size: 25px;
+  text-align: center;
+}
+
 .mulai-investasi span.md {
   font-style: normal;
   font-weight: normal;
