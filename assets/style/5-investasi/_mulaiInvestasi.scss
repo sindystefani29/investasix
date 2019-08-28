@@ -125,6 +125,11 @@
             text-align: center;
         }
     }
+    .nomorHP{
+        .v-messages{
+            min-height: 0px;
+        }
+    }
     span.md{
         font-style: normal;
         font-weight: normal;

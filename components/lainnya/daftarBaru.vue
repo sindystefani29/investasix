@@ -186,10 +186,11 @@
                     <v-text-field
                         type="text"
                         label="Nomor HP"
-                        hint="Pastikan nomor hp kamu benar karena akan dikirimkan kode OTP untuk proses verifikasi email"
                         v-model="nomorHP"
+                        class="nomorHP"
                     ></v-text-field>
                 </div>
+                <span class="sm text-align-left mb-2">Pastikan nomor hp kamu benar karena akan dikirimkan kode OTP untuk proses verifikasi email</span>
                 <v-btn color="#A71E22" class="ma-0 d-flex" @click="nomorHPValidation.isNomorHP = !nomorHPValidation.isNomorHP, nomorHPMethod()">
                     <a>Dapatkan Kode OTP</a>
                 </v-btn>

@@ -119,6 +119,10 @@ html {
           flex-direction: column;
 }
 
+.text-align-left {
+  text-align: left;
+}
+
 .nuxt-link-active {
   color: #A71E22 !important;
 }
@@ -1170,6 +1174,10 @@ img {
 .mulai-investasi .kodeOTP .v-text-field input {
   font-size: 25px;
   text-align: center;
+}
+
+.mulai-investasi .nomorHP .v-messages {
+  min-height: 0px;
 }
 
 .mulai-investasi span.md {
