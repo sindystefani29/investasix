@@ -340,6 +340,14 @@ export default {
                         break
                     }else if(i == 6){
                         this.kodeOTP = `${document.querySelector(`input[name=value1]`).value}${document.querySelector(`input[name=value2]`).value}${document.querySelector(`input[name=value3]`).value}${document.querySelector(`input[name=value4]`).value}${document.querySelector(`input[name=value5]`).value}${document.querySelector(`input[name=value6]`).value}`
+                        
+                        const userStatus = this.chooseUser.isInvestor ? 'Investor' : 'Borrower'
+                        const userObj = {
+                            username: `${this.fullname}`,
+                            status: userStatus
+                        }
+                        this.$store.commit('addUser', userObj)
+                        
                         this.verificationSuccessMethod()
                     }
                 }

@@ -1,0 +1,77 @@
+.profile{
+    h3{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 23px;
+    }
+    h4{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 19px;
+    }
+    span{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 14px;
+        background-color: $blue;
+        padding: 2px 5px;
+        border-radius: 2px;
+    }
+    &--noimage{
+        background-color: $light_grey;
+        width: 45px;
+        border-radius: 50%;
+        overflow: hidden;
+        height: 45px;
+    }
+    &--referral{
+        padding: 15px;
+        border-radius: 5px;
+        border: 1px solid $light_grey;
+        &-link, .v-icon{
+            color: $red;
+        }
+
+    }
+    .bg--red{
+        color: #fff;
+        .v-icon{
+            color: #fff;
+        }
+    }
+    p{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    button{
+        width: 90px;
+        height: 30px;
+        margin-right: 0;
+        margin-left: auto;
+        a{
+            color: #fff;
+            height: auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .profile{
+        h3, .bg--red{
+            padding: 10px;
+        }
+    }
+}
+
+@media only screen and (min-width: 321px){
+    .profile{
+        h3, .bg--red{
+            padding: 15px;
+        }
+    }
+}

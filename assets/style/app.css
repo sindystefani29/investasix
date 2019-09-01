@@ -247,6 +247,10 @@ img {
   color: #188CA6;
 }
 
+.text-red {
+  color: #A71E22;
+}
+
 .bg--white {
   background-color: #fff !important;
 }
@@ -1503,5 +1507,86 @@ img {
 .lainnya--text {
   width: 100%;
   margin-left: 12px;
+}
+
+.profile h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 23px;
+}
+
+.profile h4 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.profile span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+  background-color: #188CA6;
+  padding: 2px 5px;
+  border-radius: 2px;
+}
+
+.profile--noimage {
+  background-color: #EAEAEA;
+  width: 45px;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 45px;
+}
+
+.profile--referral {
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #EAEAEA;
+}
+
+.profile--referral-link, .profile--referral .v-icon {
+  color: #A71E22;
+}
+
+.profile .bg--red {
+  color: #fff;
+}
+
+.profile .bg--red .v-icon {
+  color: #fff;
+}
+
+.profile p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.profile button {
+  width: 90px;
+  height: 30px;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.profile button a {
+  color: #fff;
+  height: auto;
+}
+
+@media only screen and (max-width: 320px) {
+  .profile h3, .profile .bg--red {
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 321px) {
+  .profile h3, .profile .bg--red {
+    padding: 15px;
+  }
 }
 /*# sourceMappingURL=app.css.map */

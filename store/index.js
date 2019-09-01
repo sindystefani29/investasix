@@ -1,9 +1,8 @@
 export const state = () => ({
     nama_perusahaan: '',
     dana_pinjaman: '',
-    user: {
-        
-    }
+    username: '',
+    status: ''
 })
   
 export const mutations = {
@@ -12,6 +11,7 @@ export const mutations = {
         state.dana_pinjaman = payload.dana_pinjaman;
     },
     addUser (state, payload) {
-        
+        state.username = payload.username;
+        state.status = payload.status;
     }
 }
