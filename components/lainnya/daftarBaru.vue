@@ -4,9 +4,10 @@
             class="mulai-investasi"
             :class="{
                 'pb-129': chooseUser.isChooseUserAction || accountType.isAccountTypeAction || kodeOTPValidation.iskodeOTPAction,
+                'pb-156': kodeOTPValidation.iskodeOTPAction || verificationSuccess,
                 'pb-189': inputEmail.isInputEmailAction || fullName.isFullNameAction,
                 'pb-208': nomorHPValidation.isNomorHPAction,
-                'pb-269': passwordValidation.isPasswordAction
+                'pb-269': passwordValidation.isPasswordAction,
             }"
         >
             <div class="mulai-investasi--admin">
@@ -195,21 +196,30 @@
                     <a>Dapatkan Kode OTP</a>
                 </v-btn>
             </div>
-            <div class="mulai-investasi--floating d-flex main h-129" v-if="kodeOTPValidation.iskodeOTPAction">
+            <div class="mulai-investasi--floating d-flex main h-156" v-if="kodeOTPValidation.iskodeOTPAction">
                 <h4>Kode OTP</h4>
                 <div class="d-flex">
                     <div class="px-1 kodeOTP" v-for="i in 6" :key="i">
                         <v-text-field
                             type="text"
                             :name="`value${i}`"
-                            :autofocus="true"
+                            :autofocus="i === 1 ? true : false"
                             @keyup="moveCursor($event, i)"
+                            @focus="moveCursor($event, i)"
                             @keypress="isNumeric($event), maxLengthCheck($event)"
                             max=1
                             maxlength=1
                         ></v-text-field>
                     </div>
                 </div>
+                <span class="sm">Tidak menerima OTP ? <a v-if="kodeOTPValidation.timerOn">Kirim ulang dalam {{kodeOTPValidation.timer}}</a><a @click="countdownTimer()" v-else>Kirim Ulang</a></span>
+            </div>
+            <div class="mulai-investasi--floating d-flex main h-156" v-if="verificationSuccess">
+                <h4>Verifikasi Akun Berhasil</h4>
+                <span class="lg text-grey">Verifikasi akun kamu berhasil, ayo Top up dana untuk lakukan investasi sekarang</span>
+                <v-btn color="#A71E22" class="ma-0 d-flex">
+                    <a>Top Up Dana</a>
+                </v-btn>
             </div>
         </div>
     </div>
@@ -265,10 +275,14 @@ export default {
             isNomorHP: false,
             isNomorHPAction: false
         },
+        kodeOTP: '',
         kodeOTPValidation:{
             iskodeOTP: false,
-            iskodeOTPAction: false
-        }
+            iskodeOTPAction: false,
+            timer:'',
+            timerOn: false
+        },
+        verificationSuccess: false
       }
     },
     mounted(){
@@ -307,10 +321,28 @@ export default {
             this.nomorHPValidation.isNomorHPAction = false
             this.kodeOTPValidation.iskodeOTPAction = true
             setTimeout(this.toBottom, 100)
+            this.countdownTimer()
+        },
+        verificationSuccessMethod(){
+            this.kodeOTPValidation.iskodeOTPAction = false
+            this.kodeOTPValidation.iskodeOTP = true
+            setTimeout(this.toBottom, 100)
+            this.verificationSuccess = true
         },
         moveCursor(e, index){
             if(e.target.value.length > 0 && index !== 6){
                 document.getElementsByClassName('kodeOTP')[index].children[0].children[0].children[0].children[0].children[0].focus()
+            }
+            if(e.target.value.length > 0 && index === 6){
+                for(let i = 1; i <= 6; i++){
+                    if(i < 6 && document.getElementsByClassName('kodeOTP')[i].children[0].children[0].children[0].children[0].children[0].value.length === 0){
+                        document.getElementsByClassName('kodeOTP')[i].children[0].children[0].children[0].children[0].children[0].focus()
+                        break
+                    }else if(i == 6){
+                        this.kodeOTP = `${document.querySelector(`input[name=value1]`).value}${document.querySelector(`input[name=value2]`).value}${document.querySelector(`input[name=value3]`).value}${document.querySelector(`input[name=value4]`).value}${document.querySelector(`input[name=value5]`).value}${document.querySelector(`input[name=value6]`).value}`
+                        this.verificationSuccessMethod()
+                    }
+                }
             }
         },
         isNumeric (evt) {
@@ -327,6 +359,42 @@ export default {
             if(e.target.value.length >= 1){
                 e.target.value = e.target.value.slice(0,1)
             }
+        },
+        countdownTimer(){
+            const momentTime = this.$moment()
+            const moment = this.$moment
+            
+            const currentTime = momentTime.unix()
+            const eventTime = momentTime.add(2, 'minutes').add(30, 'seconds').unix()
+            let diffTime = eventTime - currentTime
+            let duration = moment.duration(diffTime * 1000, 'milliseconds')
+            
+            const interval = 1000
+
+            let timerId = setInterval(() => {
+                if(diffTime > 0){
+                    this.kodeOTPValidation.timerOn = true
+
+                    duration = moment.duration(duration.asMilliseconds() - interval, 'milliseconds')
+                    let m = moment.duration(duration).minutes()
+                    let s = moment.duration(duration).seconds()
+
+                    if(m < 10){
+                        m = '0' + m
+                    }
+
+                    if(s < 10){
+                        s = '0' + s
+                    }
+
+                    this.kodeOTPValidation.timer = `${m}:${s}`
+                }
+            }, interval);
+
+            setTimeout(() => {
+                clearInterval(timerId)
+                this.kodeOTPValidation.timerOn = false
+            }, 150000)
         }
     }
 }
