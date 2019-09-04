@@ -5,6 +5,7 @@
         font-size: 14px;
         line-height: 19px;
         margin-bottom: 0;
+        color: $black
     }
     &--combo-btn{
         width: 20px;
@@ -22,5 +23,19 @@
     }
     .v-icon{
         color: $red;
+    }
+    .v-btn--outline a {
+        color: $red;
+    }
+    button{
+        width: 100%;
+        a{
+            color: #fff;
+            height: 40px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 19px;
+        }
     }
 }

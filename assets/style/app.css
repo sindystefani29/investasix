@@ -1600,6 +1600,7 @@ img {
   font-size: 14px;
   line-height: 19px;
   margin-bottom: 0;
+  color: #231F20;
 }
 
 .data-diri--combo-btn {
@@ -1622,5 +1623,22 @@ img {
 
 .data-diri .v-icon {
   color: #A71E22;
+}
+
+.data-diri .v-btn--outline a {
+  color: #A71E22;
+}
+
+.data-diri button {
+  width: 100%;
+}
+
+.data-diri button a {
+  color: #fff;
+  height: 40px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
 }
 /*# sourceMappingURL=app.css.map */

@@ -2,7 +2,7 @@
     <div class="data-diri plr-15">
         <p class="text-grey mb-4">Mohon lengkapi data diri Anda di bawah</p>
         <div class="d-flex flex-column">
-            <div class="data-diri--content d-flex justify-between mb-3">
+            <nuxt-link to="/data-investor/webcam" class="data-diri--content d-flex justify-between mb-3">
                 <div class="d-flex align-center">
                     <div class="data-diri--combo-btn mr-3 bg--green">
                         <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -14,8 +14,8 @@
                 <div class="d-flex align-center">
                     <v-icon>chevron_right</v-icon>
                 </div>
-            </div>
-            <div class="data-diri--content d-flex justify-between mb-3">
+            </nuxt-link>
+            <nuxt-link to="/dana" class="data-diri--content d-flex justify-between mb-3">
                 <div class="d-flex align-center">
                     <div class="data-diri--combo-btn mr-3 bg--grey"></div>
                     <p><strong>Identitas Anda</strong></p>
@@ -23,8 +23,8 @@
                 <div class="d-flex align-center">
                     <v-icon>chevron_right</v-icon>
                 </div>
-            </div>
-            <div class="data-diri--content d-flex justify-between mb-3">
+            </nuxt-link>
+            <nuxt-link to="/dana" class="data-diri--content d-flex justify-between mb-3">
                 <div class="d-flex align-center">
                     <div class="data-diri--combo-btn mr-3 bg--grey"></div>
                     <p><strong>Akun Bank</strong></p>
@@ -32,7 +32,7 @@
                 <div class="d-flex align-center">
                     <v-icon>chevron_right</v-icon>
                 </div>
-            </div>
+            </nuxt-link>
         </div>
     </div>
 </template>
