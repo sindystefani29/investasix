@@ -5,7 +5,11 @@
         font-size: 14px;
         line-height: 19px;
         margin-bottom: 0;
-        color: $black
+    }
+    a{
+        p{
+            color: $black
+        }
     }
     &--combo-btn{
         width: 20px;

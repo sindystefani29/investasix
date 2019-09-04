@@ -1428,10 +1428,6 @@ img {
   color: #231F20;
 }
 
-.dana .pure-material-textfield-outlined {
-  width: 100%;
-}
-
 .dana span {
   font-style: normal;
   font-weight: normal;
@@ -1600,6 +1596,9 @@ img {
   font-size: 14px;
   line-height: 19px;
   margin-bottom: 0;
+}
+
+.data-diri a p {
   color: #231F20;
 }
 

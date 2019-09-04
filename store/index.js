@@ -2,7 +2,10 @@ export const state = () => ({
     nama_perusahaan: '',
     dana_pinjaman: '',
     username: '',
-    status: ''
+    status: '',
+    ktp: '',
+    selfieKTP: '',
+    noKTP: ''
 })
   
 export const mutations = {
@@ -13,5 +16,14 @@ export const mutations = {
     addUser (state, payload) {
         state.username = payload.username;
         state.status = payload.status;
+    },
+    addKTP (state, payload) {
+        state.ktp = payload
+    },
+    addSelfieKTP (state, payload) {
+        state.selfieKTP = payload
+    },
+    addNoKTP (state, payload) {
+        state.noKTP = payload
     }
 }

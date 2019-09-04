@@ -2,16 +2,18 @@
     <div class="data-diri plr-15">
         <div class="d-flex flex-column">
             <video autoplay="true" id="webcamVideo" style="width: 100%"></video>
-            <div id="gambar"></div>
+            <div id="gambar">
+                <img src="">
+            </div>
             <v-btn v-if="cameraOn" color="#A71E22" class="mt-3 ma-0 d-flex" @click="takeSnapshot">
                 <a>Ambil Gambar</a>
             </v-btn>
             <div v-else class="d-flex mt-3">
-                <v-btn color="#A71E22" class="d-flex" @click="takeSnapshot">
-                    <a>OK!</a>
-                </v-btn>
-                <v-btn outline color="#A71E22" class="d-flex" @click="takeSnapshot">
+                <v-btn outline color="#A71E22" class="d-flex ml-0" @click="webCamOn">
                     <a>Foto Ulang</a>
+                </v-btn>
+                <v-btn color="#A71E22" class="d-flex mr-0" @click="saveImage">
+                    <a>OK !</a>
                 </v-btn>
             </div>
         </div>
@@ -31,13 +33,8 @@ export default {
       }
     },
     mounted() {
-        const video = document.getElementById('webcamVideo')
+        this.webCamOn()
 
-        navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia
-        
-        if(navigator.getUserMedia){
-            navigator.getUserMedia({video: true}, this.handleVideo, this.videoError)
-        }
         this.$once('hook:destroyed', () => {
             this.webCamOff()
         })
@@ -50,6 +47,20 @@ export default {
         videoError(e){
             alert("Izinkan menggunakan webcam untuk foto KTP")
         },
+        webCamOn(){
+            this.cameraOn = true
+
+            document.getElementById('webcamVideo').style.display = 'flex'
+            document.getElementById('gambar').style.display = 'none'
+
+            const video = document.getElementById('webcamVideo')
+
+            navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia
+            
+            if(navigator.getUserMedia){
+                navigator.getUserMedia({video: true}, this.handleVideo, this.videoError)
+            }
+        },
         webCamOff(stream){
             const video = document.getElementById('webcamVideo')
             video.pause();
@@ -59,7 +70,8 @@ export default {
         },
         takeSnapshot(){
             const video = document.getElementById('webcamVideo')
-            let img = document.createElement('img')
+            const gambar = document.getElementById('gambar')
+            let img = gambar.children[0]
             let canvas = document.createElement('canvas')
 
             let context
@@ -75,11 +87,22 @@ export default {
 
             img.src = canvas.toDataURL('image/jpg');
 
-            document.getElementById('webcamVideo').style.display = 'none'
-            document.getElementById('gambar').appendChild(img)
+            video.style.display = 'none'
+            gambar.style.display = 'flex'
 
             this.webCamOff()
             this.cameraOn = false
+        },
+        saveImage(){
+            const img = document.getElementById('gambar').children[0].src
+            
+            if(this.$store.state.ktp){
+                this.$store.commit('addSelfieKTP', img)
+            }else{
+                this.$store.commit('addKTP', img)
+            }
+
+            this.$router.push({path: '/data-investor/ktp'})
         }
     }
 }
